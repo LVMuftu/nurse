@@ -1,0 +1,7877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemşirelik</title>
+    <script>
+        alert("Bu web sayfası front-end kısımda çalışır.\nTüm verileri tarayıcınıza yükler ve sizin cihazınızın kaynaklarını kullanır.\nSitenin çalışma hızı sizin cihazınızın kaynaklarına bağlıdır.")
+    </script>
+    <script>
+        const ta2 = [
+  {
+    "location": "T.C. Sağlık Bakanlığı Seyhan Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "9",
+    "min": 80.3087,
+    "max": 83.03201
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adana Çukurova Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "15",
+    "min": 79.46444,
+    "max": 82.60462
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adana Yüreğir Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "4",
+    "min": 79.39019,
+    "max": 79.79982
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adana Şehir Hastanesi (Güney Seyhan Devlet Hastanesi)",
+    "city": "Adana",
+    "kont": "6",
+    "min": 78.76964,
+    "max": 83.68081
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adana Yüreğir Devlet Hastanesi (Güney Seyhan Devlet Hastanesi)",
+    "city": "Adana",
+    "kont": "2",
+    "min": 78.64842,
+    "max": 78.88264
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Seyhan Devlet Hastanesi (Güney Seyhan Devlet Hastanesi)",
+    "city": "Adana",
+    "kont": "17",
+    "min": 78.49172,
+    "max": 81.14802
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karaisalı Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "3",
+    "min": 78.25026,
+    "max": 82.05832
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ceyhan Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "5",
+    "min": 78.19146,
+    "max": 79.11227
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ceyhan Devlet Hastanesi (Güney Seyhan Devlet Hastanesi)",
+    "city": "Adana",
+    "kont": "2",
+    "min": 77.59228,
+    "max": 78.93322
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Pozantı 80.Yıl Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "6",
+    "min": 77.12252,
+    "max": 81.4059
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kozan Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "9",
+    "min": 76.43363,
+    "max": 82.83063
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adana Dr.Ekrem Tok Ruh Sağlığı Ve Hastalıkları Hastanesi (Güney Seyhan Devlet Hastanesi)",
+    "city": "Adana",
+    "kont": "45",
+    "min": 75.98258,
+    "max": 79.27356
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tufanbeyli Devlet Hastanesi (Güney Seyhan Devlet Hastanesi)",
+    "city": "Adana",
+    "kont": "1",
+    "min": 75.95337,
+    "max": 75.95337
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aladağ İlçe Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "4",
+    "min": 75.4422,
+    "max": 76.34296
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Feke İlçe Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "4",
+    "min": 75.03715,
+    "max": 77.26836
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Saimbeyli Şehit Uzman Çavuş Adem Ambarcı İlçe Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "4",
+    "min": 74.52731,
+    "max": 77.94312
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çay Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "1",
+    "min": 85.59993,
+    "max": 85.59993
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Afyonkarahisar Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "7",
+    "min": 79.17468,
+    "max": 83.88448
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şuhut Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "1",
+    "min": 78.22563,
+    "max": 78.22563
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sinanpaşa Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "1",
+    "min": 78.18687,
+    "max": 78.18687
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sandıklı Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "1",
+    "min": 78.16683,
+    "max": 78.16683
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bolvadin Dr.Halil İbrahim Özsoy Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "1",
+    "min": 77.53445,
+    "max": 77.53445
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Emirdağ Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "2",
+    "min": 76.77264,
+    "max": 77.29661
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Dinar Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "2",
+    "min": 76.53842,
+    "max": 77.50161
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Eleşkirt İlçe Devlet Hastanesi",
+    "city": "Ağrı",
+    "kont": "1",
+    "min": 87.24705,
+    "max": 87.24705
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Patnos Devlet Hastanesi",
+    "city": "Ağrı",
+    "kont": "3",
+    "min": 78.58142,
+    "max": 78.68488
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Doğubayazıt Dr.Yaşar Eryılmaz Devlet Hastanesi",
+    "city": "Ağrı",
+    "kont": "2",
+    "min": 78.57285,
+    "max": 79.58203
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tutak İlçe Devlet Hastanesi",
+    "city": "Ağrı",
+    "kont": "1",
+    "min": 78.19508,
+    "max": 78.19508
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ağrı Eğitim Ve Araştırma Hastanesi",
+    "city": "Ağrı",
+    "kont": "9",
+    "min": 77.52624,
+    "max": 79.36423
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ağrı Eğitim Ve Araştırma Hastanesi (T.C. Sağlık Bakanlığı Ağrı Fizik Tedavi Ve Rehabilitasyon Hastanesi)",
+    "city": "Ağrı",
+    "kont": "2",
+    "min": 77.25423,
+    "max": 77.46744
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hamur İlçe Devlet Hastanesi",
+    "city": "Ağrı",
+    "kont": "1",
+    "min": 77.23323,
+    "max": 77.23323
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Taşlıçay İlçe Devlet Hastanesi",
+    "city": "Ağrı",
+    "kont": "2",
+    "min": 76.54434,
+    "max": 76.7858
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Diyadin Devlet Hastanesi",
+    "city": "Ağrı",
+    "kont": "2",
+    "min": 76.49146,
+    "max": 76.49605
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aksaray Eğitim Ve Araştırma Hastanesi",
+    "city": "Aksaray",
+    "kont": "1",
+    "min": 82.23833,
+    "max": 82.23833
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Suluova Devlet Hastanesi",
+    "city": "Amasya",
+    "kont": "1",
+    "min": 77.41553,
+    "max": 77.41553
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Merzifon Kara Mustafa Paşa Devlet Hastanesi",
+    "city": "Amasya",
+    "kont": "4",
+    "min": 76.94939,
+    "max": 78.57188
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Amasya Sabuncuoğlu Şerefeddin Eğitim Ve Araştırma Hastanesi",
+    "city": "Amasya",
+    "kont": "9",
+    "min": 76.19941,
+    "max": 78.14087
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Göynücek İlçe Devlet Hastanesi",
+    "city": "Amasya",
+    "kont": "1",
+    "min": 75.56341,
+    "max": 75.56341
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gümüşhacıköy Devlet Hastanesi",
+    "city": "Amasya",
+    "kont": "2",
+    "min": 75.06902,
+    "max": 75.07361
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ankara Atatürk Sanatoryum Eğitim Ve Araştırma Hastanesi",
+    "city": "Ankara",
+    "kont": "1",
+    "min": 87.46026,
+    "max": 87.46026
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kahramankazan Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "1",
+    "min": 83.58423,
+    "max": 83.58423
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Polatlı Duatepe Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "1",
+    "min": 81.79223,
+    "max": 81.79223
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akyurt Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "2",
+    "min": 80.98805,
+    "max": 83.94919
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ankara Gülhane Eğitim Ve Araştırma Hastanesi",
+    "city": "Ankara",
+    "kont": "2",
+    "min": 79.85995,
+    "max": 81.21635
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kızılcahamam Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "1",
+    "min": 79.46902,
+    "max": 79.46902
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kalecik İlçe Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "2",
+    "min": 76.00625,
+    "max": 77.52986
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bala İlçe Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "2",
+    "min": 75.8732,
+    "max": 77.05286
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Güdül İlçe Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "2",
+    "min": 75.7707,
+    "max": 75.82262
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ankara Etlik Şehir Hastanesi",
+    "city": "Ankara",
+    "kont": "170",
+    "min": 75.39753,
+    "max": 83.19789
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ankara Bilkent Şehir Hastanesi",
+    "city": "Ankara",
+    "kont": "229",
+    "min": 75.11961,
+    "max": 83.11676
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Manavgat Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "1",
+    "min": 80.2755,
+    "max": 80.2755
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Demre Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "1",
+    "min": 78.76964,
+    "max": 78.76964
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akseki İlçe Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "1",
+    "min": 78.53312,
+    "max": 78.53312
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Serik Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "1",
+    "min": 78.15271,
+    "max": 78.15271
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kumluca Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "1",
+    "min": 77.9267,
+    "max": 77.9267
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Korkuteli Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "1",
+    "min": 76.98223,
+    "max": 76.98223
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kaş Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "1",
+    "min": 76.75852,
+    "max": 76.75852
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Elmalı Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "1",
+    "min": 76.61267,
+    "max": 76.61267
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Antalya Şehir Hastanesi",
+    "city": "Antalya",
+    "kont": "42",
+    "min": 76.56897,
+    "max": 80.2755
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gündoğmuş İlçe Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "1",
+    "min": 76.52068,
+    "max": 76.52068
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Alanya Eğitim Ve Araştırma Hastanesi",
+    "city": "Antalya",
+    "kont": "9",
+    "min": 76.23455,
+    "max": 77.81333
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ardahan Devlet Hastanesi",
+    "city": "Ardahan",
+    "kont": "3",
+    "min": 75.55882,
+    "max": 78.46709
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Göle Devlet Hastanesi",
+    "city": "Ardahan",
+    "kont": "1",
+    "min": 75.41757,
+    "max": 75.41757
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yusufeli Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "1",
+    "min": 75.83312,
+    "max": 75.83312
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Artvin Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "2",
+    "min": 75.48361,
+    "max": 75.71191
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hopa Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "1",
+    "min": 75.01119,
+    "max": 75.01119
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Borçka Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "1",
+    "min": 74.95602,
+    "max": 74.95602
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Murgul İlçe Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "1",
+    "min": 74.87585,
+    "max": 74.87585
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şavşat Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "1",
+    "min": 74.86764,
+    "max": 74.86764
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Didim Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "1",
+    "min": 82.79284,
+    "max": 82.79284
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aydın Atatürk Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "1",
+    "min": 81.23047,
+    "max": 81.23047
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çine Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "1",
+    "min": 79.99432,
+    "max": 79.99432
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bozdoğan Rasim Menteşe İlçe Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "1",
+    "min": 79.98116,
+    "max": 79.98116
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aydın Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "5",
+    "min": 79.77157,
+    "max": 84.20478
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kuşadası Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "2",
+    "min": 78.69901,
+    "max": 79.41023
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Nazilli Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "9",
+    "min": 78.66484,
+    "max": 80.76663
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aydın Kadın Doğum Ve Çocuk Hastalıkları Hastanesi",
+    "city": "Aydın",
+    "kont": "4",
+    "min": 78.36229,
+    "max": 79.10502
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Söke Fehime Faik Kocagöz Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "5",
+    "min": 78.17733,
+    "max": 80.106
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Köşk İlçe Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "2",
+    "min": 77.89712,
+    "max": 78.03608
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Balıkesir Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 87.33313,
+    "max": 87.33313
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gömeç İlçe Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 78.23613,
+    "max": 78.23613
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Erdek Neyyire Sıtkı Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 77.85016,
+    "max": 77.85016
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kepsut İlçe Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 77.8242,
+    "max": 77.8242
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Balıkesir Atatürk Şehir Hastanesi",
+    "city": "Balıkesir",
+    "kont": "23",
+    "min": 77.50982,
+    "max": 85.8496
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Susurluk Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 77.41323,
+    "max": 77.41323
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bandırma Eğitim Ve Araştırma Hastanesi",
+    "city": "Balıkesir",
+    "kont": "7",
+    "min": 77.37677,
+    "max": 81.19039
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bigadiç Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 77.37677,
+    "max": 77.37677
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İvrindi Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 77.18723,
+    "max": 77.18723
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gönen Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 76.6938,
+    "max": 76.6938
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Savaştepe Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 76.65964,
+    "max": 76.65964
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Manyas Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 76.53842,
+    "max": 76.53842
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Balya İlçe Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 76.31701,
+    "max": 76.31701
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Marmara Süleyman İlik İlçe Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 76.04271,
+    "max": 76.04271
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sındırgı Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 75.95796,
+    "max": 75.95796
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Dursunbey Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 75.66591,
+    "max": 75.66591
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bartın Devlet Hastanesi",
+    "city": "Bartın",
+    "kont": "5",
+    "min": 76.13929,
+    "max": 77.03052
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bayburt Devlet Hastanesi",
+    "city": "Bayburt",
+    "kont": "3",
+    "min": 77.11527,
+    "max": 79.40202
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Pazaryeri İlçe Devlet Hastanesi",
+    "city": "Bilecik",
+    "kont": "1",
+    "min": 79.63032,
+    "max": 79.63032
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bilecik Eğitim Ve Araştırma Hastanesi",
+    "city": "Bilecik",
+    "kont": "7",
+    "min": 77.54036,
+    "max": 83.34868
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tatvan Devlet Hastanesi",
+    "city": "Bitlis",
+    "kont": "9",
+    "min": 81.50248,
+    "max": 83.94328
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ahlat Devlet Hastanesi",
+    "city": "Bitlis",
+    "kont": "1",
+    "min": 80.86551,
+    "max": 80.86551
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bitlis Devlet Hastanesi",
+    "city": "Bitlis",
+    "kont": "5",
+    "min": 80.41808,
+    "max": 81.9982
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adilcevaz Onkoloji Hastanesi",
+    "city": "Bitlis",
+    "kont": "1",
+    "min": 80.06953,
+    "max": 80.06953
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mutki İlçe Devlet Hastanesi",
+    "city": "Bitlis",
+    "kont": "1",
+    "min": 80.00482,
+    "max": 80.00482
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Güroymak Devlet Hastanesi",
+    "city": "Bitlis",
+    "kont": "2",
+    "min": 79.97066,
+    "max": 80.37208
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hizan Devlet Hastanesi",
+    "city": "Bitlis",
+    "kont": "2",
+    "min": 79.45852,
+    "max": 79.53736
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bolu İzzet Baysal Devlet Hastanesi",
+    "city": "Bolu",
+    "kont": "2",
+    "min": 77.7112,
+    "max": 79.10865
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yeniçağa İlçe Devlet Hastanesi",
+    "city": "Bolu",
+    "kont": "1",
+    "min": 77.01181,
+    "max": 77.01181
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bolu İzzet Baysal Eğitim Ve Araştırma Hastanesi",
+    "city": "Bolu",
+    "kont": "11",
+    "min": 75.83541,
+    "max": 77.95724
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mudurnu İlçe Devlet Hastanesi",
+    "city": "Bolu",
+    "kont": "1",
+    "min": 75.80487,
+    "max": 75.80487
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gerede Devlet Hastanesi",
+    "city": "Bolu",
+    "kont": "1",
+    "min": 74.77927,
+    "max": 74.77927
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yeşilova Devlet Hastanesi",
+    "city": "Burdur",
+    "kont": "1",
+    "min": 78.65434,
+    "max": 78.65434
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ağlasun İlçe Devlet Hastanesi",
+    "city": "Burdur",
+    "kont": "1",
+    "min": 78.65301,
+    "max": 78.65301
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gölhisar Devlet Hastanesi",
+    "city": "Burdur",
+    "kont": "2",
+    "min": 76.45367,
+    "max": 81.6214
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bursa Dr. Ayten Bozkaya Spastik Çocuklar Hastanesi Ve Rehabilitasyon Merkezi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 85.38805,
+    "max": 85.38805
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mustafakemalpaşa Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 81.44006,
+    "max": 81.44006
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karacabey Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 79.80345,
+    "max": 79.80345
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gemlik Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 78.86984,
+    "max": 78.86984
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mudanya Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 78.78376,
+    "max": 78.78376
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İnegöl Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 78.51767,
+    "max": 78.51767
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kestel Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 78.45658,
+    "max": 78.45658
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gürsu Cüneyt Yıldız Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 78.201,
+    "max": 78.201
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bursa Şehir Hastanesi",
+    "city": "Bursa",
+    "kont": "24",
+    "min": 78.09029,
+    "max": 82.29616
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bursa Ali Osman Sönmez Onkoloji Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 77.9372,
+    "max": 77.9372
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bursa Dörtçelik Çocuk Hastalıkları Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 77.93261,
+    "max": 77.93261
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yenişehir Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 77.69936,
+    "max": 77.69936
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Keles İlçe Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 77.67341,
+    "max": 77.67341
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çekirge Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "19",
+    "min": 77.40961,
+    "max": 78.96872
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bursa Yüksek İhtisas Eğitim Ve Araştırma Hastanesi",
+    "city": "Bursa",
+    "kont": "30",
+    "min": 76.60084,
+    "max": 78.25617
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Büyükorhan İlçe Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 76.40309,
+    "max": 76.40309
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Harmancık İlçe Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "1",
+    "min": 75.85316,
+    "max": 75.85316
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ezine Devlet Hastanesi",
+    "city": "Çanakkale",
+    "kont": "1",
+    "min": 79.97162,
+    "max": 79.97162
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çanakkale Ayvacık Devlet Hastanesi",
+    "city": "Çanakkale",
+    "kont": "1",
+    "min": 77.07749,
+    "max": 77.07749
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Biga Devlet Hastanesi",
+    "city": "Çanakkale",
+    "kont": "5",
+    "min": 76.98223,
+    "max": 77.73945
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bayramiç Devlet Hastanesi",
+    "city": "Çanakkale",
+    "kont": "1",
+    "min": 76.91752,
+    "max": 76.91752
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gökçeada Devlet Hastanesi",
+    "city": "Çanakkale",
+    "kont": "1",
+    "min": 76.46188,
+    "max": 76.46188
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çanakkale Yenice Devlet Hastanesi",
+    "city": "Çanakkale",
+    "kont": "1",
+    "min": 75.37157,
+    "max": 75.37157
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çankırı Devlet Hastanesi",
+    "city": "Çankırı",
+    "kont": "12",
+    "min": 75.19253,
+    "max": 75.84133
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ilgaz Devlet Hastanesi",
+    "city": "Çankırı",
+    "kont": "1",
+    "min": 75.11731,
+    "max": 75.11731
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kurşunlu Devlet Hastanesi",
+    "city": "Çankırı",
+    "kont": "1",
+    "min": 75.10777,
+    "max": 75.10777
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çerkeş Devlet Hastanesi",
+    "city": "Çankırı",
+    "kont": "3",
+    "min": 75.06081,
+    "max": 75.0759
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Alaca Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "1",
+    "min": 77.16127,
+    "max": 77.16127
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çorum Erol Olçok Eğitim Ve Araştırma Hastanesi",
+    "city": "Çorum",
+    "kont": "12",
+    "min": 75.97667,
+    "max": 79.43256
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Oğuzlar İlçe Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "1",
+    "min": 75.69416,
+    "max": 75.69416
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sungurlu Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "2",
+    "min": 75.68462,
+    "max": 75.94975
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Dodurga İlçe Hastanesi",
+    "city": "Çorum",
+    "kont": "1",
+    "min": 75.46224,
+    "max": 75.46224
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Osmancık Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "2",
+    "min": 75.37024,
+    "max": 75.82129
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İskilip Atıf Hoca Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "2",
+    "min": 75.25494,
+    "max": 75.27861
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kargı Ahmet Hamdi Akpınar İlçe Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "2",
+    "min": 75.0631,
+    "max": 76.31471
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bayat Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "1",
+    "min": 74.83577,
+    "max": 74.83577
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Boğazkale İlçe Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "1",
+    "min": 74.82394,
+    "max": 74.82394
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Uğurludağ Şehit Sami Saygı İlçe Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "1",
+    "min": 74.80293,
+    "max": 74.80293
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Denizli Devlet Hastanesi",
+    "city": "Denizli",
+    "kont": "1",
+    "min": 81.6191,
+    "max": 81.6191
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çivril Şehit Hilmi Öz Devlet Hastanesi",
+    "city": "Denizli",
+    "kont": "2",
+    "min": 79.20294,
+    "max": 79.32777
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Buldan Göğüs Hastalıkları Hastanesi",
+    "city": "Denizli",
+    "kont": "1",
+    "min": 78.8603,
+    "max": 78.8603
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tavas Devlet Hastanesi",
+    "city": "Denizli",
+    "kont": "2",
+    "min": 78.01375,
+    "max": 78.23058
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Serinhisar İlçe Devlet Hastanesi",
+    "city": "Denizli",
+    "kont": "5",
+    "min": 77.1754,
+    "max": 78.74959
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çardak İlçe Devlet Hastanesi",
+    "city": "Denizli",
+    "kont": "2",
+    "min": 77.1399,
+    "max": 77.35444
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Güney İlçe Devlet Hastanesi",
+    "city": "Denizli",
+    "kont": "5",
+    "min": 76.409,
+    "max": 76.89156
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ergani Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "4",
+    "min": 85.39626,
+    "max": 90.57582
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bismil Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "7",
+    "min": 85.22905,
+    "max": 89.30417
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Silvan Dr.Yusuf Azizoğlu Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "7",
+    "min": 83.55368,
+    "max": 85.18076
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bismil Tepe İlçe Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "4",
+    "min": 83.20743,
+    "max": 83.68902
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kocaköy İlçe Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "4",
+    "min": 82.61875,
+    "max": 84.23991
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Dicle Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "1",
+    "min": 82.24787,
+    "max": 82.24787
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hani İlçe Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "3",
+    "min": 82.09478,
+    "max": 82.36908
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Lice Halis Toprak Vakfı Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "3",
+    "min": 82.00641,
+    "max": 83.15455
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hazro İlçe Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "5",
+    "min": 81.41314,
+    "max": 82.09707
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çermik Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "7",
+    "min": 81.32706,
+    "max": 82.43741
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kulp Dr. Abdullah Biroğul İlçe Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "3",
+    "min": 80.583,
+    "max": 80.80901
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çüngüş İlçe Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "3",
+    "min": 80.51104,
+    "max": 80.9138
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akçakoca Devlet Hastanesi",
+    "city": "Düzce",
+    "kont": "1",
+    "min": 78.58371,
+    "max": 78.58371
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Düzce Atatürk Devlet Hastanesi",
+    "city": "Düzce",
+    "kont": "13",
+    "min": 75.70599,
+    "max": 77.63827
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Edirne Sultan 1. Murat Devlet Hastanesi",
+    "city": "Edirne",
+    "kont": "7",
+    "min": 75.52695,
+    "max": 79.91778
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Keşan Devlet Hastanesi",
+    "city": "Edirne",
+    "kont": "4",
+    "min": 75.28549,
+    "max": 75.96616
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Uzunköprü Devlet Hastanesi",
+    "city": "Edirne",
+    "kont": "4",
+    "min": 75.01711,
+    "max": 76.06142
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Erzincan Mengücek Gazi Eah",
+    "city": "Erzincan",
+    "kont": "5",
+    "min": 77.13531,
+    "max": 81.24593
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kemaliye İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "2",
+    "min": 76.99865,
+    "max": 78.53409
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Üzümlü İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "1",
+    "min": 76.9448,
+    "max": 76.9448
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Refahiye Dr. Fahrettin Uğur İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "5",
+    "min": 75.29503,
+    "max": 77.38269
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kemah İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "2",
+    "min": 75.05489,
+    "max": 75.23853
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tercan İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "2",
+    "min": 74.87718,
+    "max": 75.28911
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Otlukbeli İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "2",
+    "min": 74.64852,
+    "max": 74.74281
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İliç İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "2",
+    "min": 74.3013,
+    "max": 74.50038
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çayırlı İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "2",
+    "min": 74.29538,
+    "max": 74.42384
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aşkale İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "1",
+    "min": 81.55898,
+    "max": 81.55898
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hınıs Şehit Yavuz Yürekseven Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "1",
+    "min": 78.23975,
+    "max": 78.23975
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Erzurum Bölge Eğitim Ve Araştırma Hastanesi",
+    "city": "Erzurum",
+    "kont": "16",
+    "min": 77.66882,
+    "max": 80.537
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Horasan Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "1",
+    "min": 77.12348,
+    "max": 77.12348
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Pasinler İbrahim Hakkı Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "5",
+    "min": 76.36071,
+    "max": 77.59457
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Köprüköy İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "2",
+    "min": 76.06866,
+    "max": 76.17213
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karayazı Türk Eczacıları Birliği İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "1",
+    "min": 75.97437,
+    "max": 75.97437
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Oltu Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "1",
+    "min": 75.77662,
+    "max": 75.77662
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karaçoban İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "1",
+    "min": 75.51645,
+    "max": 75.51645
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Narman İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "1",
+    "min": 75.47045,
+    "max": 75.47045
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İspir Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "2",
+    "min": 75.39982,
+    "max": 75.52695
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Uzundere Şehit İhsan Erdoğan İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "2",
+    "min": 75.11961,
+    "max": 75.77662
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Olur İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "2",
+    "min": 74.9524,
+    "max": 75.14424
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tekman Şehit Piyade Çavuş Muhammet Binici Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "1",
+    "min": 74.6886,
+    "max": 74.6886
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şenkaya İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "1",
+    "min": 74.19192,
+    "max": 74.19192
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Pazaryolu Hasan Basri Demirbağ İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "1",
+    "min": 74.09401,
+    "max": 74.09401
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gaziantep 25 Aralık Devlet Hastanesi",
+    "city": "Gaziantep",
+    "kont": "35",
+    "min": 77.87478,
+    "max": 82.17591
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yavuzeli İlçe Devlet Hastanesi",
+    "city": "Gaziantep",
+    "kont": "2",
+    "min": 76.81502,
+    "max": 76.8988
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Oğuzeli İlçe Devlet Hastanesi",
+    "city": "Gaziantep",
+    "kont": "5",
+    "min": 75.86499,
+    "max": 83.33456
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Nizip Devlet Hastanesi",
+    "city": "Gaziantep",
+    "kont": "12",
+    "min": 75.83083,
+    "max": 80.90197
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gaziantep Şehitkamil Devlet Hastanesi",
+    "city": "Gaziantep",
+    "kont": "30",
+    "min": 75.75066,
+    "max": 80.53241
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gaziantep Dr. Ersin Arslan Eğitim Ve Araştırma Hastanesi",
+    "city": "Gaziantep",
+    "kont": "78",
+    "min": 75.03848,
+    "max": 79.41023
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Araban İlçe Devlet Hastanesi",
+    "city": "Gaziantep",
+    "kont": "7",
+    "min": 74.85943,
+    "max": 79.28539
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gaziantep Abdulkadir Yüksel Devlet Hastanesi",
+    "city": "Gaziantep",
+    "kont": "108",
+    "min": 74.84169,
+    "max": 79.74103
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gaziantep Cengiz Gökçek Kadın Doğum Ve Çocuk Hastalıkları Hastanesi",
+    "city": "Gaziantep",
+    "kont": "29",
+    "min": 74.75561,
+    "max": 78.51308
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karkamış Şehit Fuat Oğuzcan İlçe Devlet Hastanesi",
+    "city": "Gaziantep",
+    "kont": "5",
+    "min": 74.6781,
+    "max": 75.33511
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Nurdağı İlçe Devlet Hastanesi",
+    "city": "Gaziantep",
+    "kont": "6",
+    "min": 74.22838,
+    "max": 75.14327
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İslahiye Devlet Hastanesi",
+    "city": "Gaziantep",
+    "kont": "30",
+    "min": 73.95505,
+    "max": 75.3939
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Eynesil İlçe Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "1",
+    "min": 78.83205,
+    "max": 78.83205
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Giresun Prof. Dr. A. İlhan Özdemir Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "3",
+    "min": 77.53807,
+    "max": 77.95954
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Giresun Kadın Doğum Ve Çocuk Hastalıkları Eğitim Ve Araştırma Hastanesi",
+    "city": "Giresun",
+    "kont": "1",
+    "min": 77.0834,
+    "max": 77.0834
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bulancak Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "1",
+    "min": 77.03281,
+    "max": 77.03281
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Espiye Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "2",
+    "min": 76.27463,
+    "max": 76.36989
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tirebolu Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "1",
+    "min": 76.08871,
+    "max": 76.08871
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Görele Op. Dr. Ergun Özdemir Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "1",
+    "min": 75.98391,
+    "max": 75.98391
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Giresun Eğitim Ve Araştırma Hastanesi",
+    "city": "Giresun",
+    "kont": "9",
+    "min": 75.82358,
+    "max": 77.44511
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Güce İlçe Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "3",
+    "min": 75.72108,
+    "max": 76.18626
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Giresun Dr. Ali Menekşe Göğüs Hastalıkları Hastanesi",
+    "city": "Giresun",
+    "kont": "3",
+    "min": 75.58116,
+    "max": 76.54205
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yağlıdere İlçe Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "1",
+    "min": 75.17249,
+    "max": 75.17249
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Dereli İlçe Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "1",
+    "min": 74.9961,
+    "max": 74.9961
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şebinkarahisar Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "2",
+    "min": 74.9524,
+    "max": 75.0089
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Alucra İlçe Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "1",
+    "min": 74.93598,
+    "max": 74.93598
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çamoluk İlçe Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "1",
+    "min": 74.74281,
+    "max": 74.74281
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gümüşhane Devlet Hastanesi",
+    "city": "Gümüşhane",
+    "kont": "8",
+    "min": 75.43399,
+    "max": 76.39355
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kelkit Devlet Hastanesi",
+    "city": "Gümüşhane",
+    "kont": "4",
+    "min": 75.01022,
+    "max": 75.48819
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yüksekova Devlet Hastanesi",
+    "city": "Hakkari",
+    "kont": "18",
+    "min": 76.97402,
+    "max": 79.42073
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hakkari Devlet Hastanesi",
+    "city": "Hakkari",
+    "kont": "10",
+    "min": 76.87611,
+    "max": 79.43027
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çukurca Devlet Hastanesi",
+    "city": "Hakkari",
+    "kont": "1",
+    "min": 76.81864,
+    "max": 76.81864
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Derecik Devlet Hastanesi",
+    "city": "Hakkari",
+    "kont": "1",
+    "min": 75.93791,
+    "max": 75.93791
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Eğirdir Kemik Eklem Hastalıkları Tedavi Ve Rehabilitasyon Hastanesi",
+    "city": "Isparta",
+    "kont": "1",
+    "min": 85.13247,
+    "max": 85.13247
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yalvaç Devlet Hastanesi",
+    "city": "Isparta",
+    "kont": "3",
+    "min": 77.06601,
+    "max": 77.6629
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gelendost İlçe Devlet Hastanesi",
+    "city": "Isparta",
+    "kont": "1",
+    "min": 77.0164,
+    "max": 77.0164
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şarkikaraağaç Dr. Sadettin Bilgiç Devlet Hastanesi",
+    "city": "Isparta",
+    "kont": "3",
+    "min": 76.79993,
+    "max": 81.77316
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Uluborlu İlçe Devlet Hastanesi",
+    "city": "Isparta",
+    "kont": "1",
+    "min": 76.63501,
+    "max": 76.63501
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sütçüler İlçe Devlet Hastanesi",
+    "city": "Isparta",
+    "kont": "1",
+    "min": 76.48651,
+    "max": 76.48651
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Senirkent İlçe Devlet Hastanesi",
+    "city": "Isparta",
+    "kont": "1",
+    "min": 76.35709,
+    "max": 76.35709
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bayrampaşa Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "1",
+    "min": 82.20911,
+    "max": 82.20911
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kağıthane Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "1",
+    "min": 78.40105,
+    "max": 78.40105
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Avcılar Murat Kölük Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "1",
+    "min": 78.09258,
+    "max": 78.09258
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Üsküdar Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "3",
+    "min": 78.01471,
+    "max": 78.73547
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Esenler Kadın Doğum Ve Çocuk Hastalıkları Hastanesi",
+    "city": "İstanbul",
+    "kont": "1",
+    "min": 77.50258,
+    "max": 77.50258
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çatalca İlyas Çokay Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "1",
+    "min": 77.2779,
+    "max": 77.2779
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstinye Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "1",
+    "min": 76.72568,
+    "max": 76.72568
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Beyoğlu Göz Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "5",
+    "min": 76.50426,
+    "max": 78.30579
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Büyükçekmece Mimar Sinan Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "5",
+    "min": 76.02267,
+    "max": 80.48412
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Başakşehir Çam Ve Sakura Şehir Hastanesi",
+    "city": "İstanbul",
+    "kont": "6",
+    "min": 75.96616,
+    "max": 80.58988
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sultanbeyli Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "4",
+    "min": 75.57524,
+    "max": 77.34852
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şile Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "2",
+    "min": 75.08544,
+    "max": 79.17831
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Silivri Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "3",
+    "min": 74.68631,
+    "max": 77.73945
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Sultan 2. Abdülhamid Han Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "4",
+    "min": 74.64031,
+    "max": 78.16091
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kartal Dr. Lütfi Kırdar Şehir Hastanesi",
+    "city": "İstanbul",
+    "kont": "25",
+    "min": 74.52863,
+    "max": 87.50855
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Beylikdüzü Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "16",
+    "min": 74.34959,
+    "max": 77.65107
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Arnavutköy Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "5",
+    "min": 74.2425,
+    "max": 75.90604
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Esenyurt Necmi Kadıoğlu Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "5",
+    "min": 74.21292,
+    "max": 76.20171
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Erenköy Ruh Ve Sinir Hastalıkları Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "4",
+    "min": 74.09992,
+    "max": 79.53277
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Göztepe Prof. Dr. Süleyman Yalçın Şehir Hastanesi",
+    "city": "İstanbul",
+    "kont": "15",
+    "min": 74.09895,
+    "max": 78.13858
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Fizik Tedavi Ve Rehabilitasyon Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "17",
+    "min": 74.06346,
+    "max": 89.97169
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Prof. Dr. Cemil Taşcıoğlu Şehir Hastanesi",
+    "city": "İstanbul",
+    "kont": "18",
+    "min": 74.04571,
+    "max": 78.81793
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Marmara Üniversitesi Pendik Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "27",
+    "min": 74.04571,
+    "max": 76.97993
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kartal Koşuyolu Yüksek İhtisas Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "17",
+    "min": 73.94551,
+    "max": 75.1114
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Fatih Sultan Mehmet Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "4",
+    "min": 73.89033,
+    "max": 74.09401
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sancaktepe Şehit Prof. Dr. İlhan Varank Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "21",
+    "min": 73.89033,
+    "max": 74.92777
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ümraniye Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "17",
+    "min": 73.8092,
+    "max": 80.78075
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bahçelievler Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "25",
+    "min": 73.77141,
+    "max": 74.75235
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bakırköy Dr. Sadi Konuk Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "22",
+    "min": 73.68896,
+    "max": 75.76708
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bağcılar Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "16",
+    "min": 73.62424,
+    "max": 74.77106
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Beykoz Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "5",
+    "min": 73.60783,
+    "max": 73.92679
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Dr. Siyami Ersek Göğüs Kalp Ve Damar Cerrahisi Eah",
+    "city": "İstanbul",
+    "kont": "31",
+    "min": 73.55953,
+    "max": 74.25071
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Haydarpaşa Numune Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "30",
+    "min": 73.50533,
+    "max": 75.80584
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Mehmet Akif Ersoy Göğüs Kalp Ve Damar Cerrahisi Eah",
+    "city": "İstanbul",
+    "kont": "31",
+    "min": 73.49349,
+    "max": 75.83541
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gaziosmanpaşa Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "14",
+    "min": 73.47575,
+    "max": 76.05321
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Kanuni Sultan Süleyman Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "18",
+    "min": 73.45571,
+    "max": 77.0164
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Süreyyapaşa Göğüs Hastalıkları Ve Göğüs Cerrahisi Eah",
+    "city": "İstanbul",
+    "kont": "16",
+    "min": 73.44291,
+    "max": 73.78554
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Haseki Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "16",
+    "min": 73.4324,
+    "max": 74.96785
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Baltalimanı Metin Sabancı Kemik Hastalıkları Eah",
+    "city": "İstanbul",
+    "kont": "5",
+    "min": 73.41828,
+    "max": 74.54046
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Prof. Dr. Mazhar Osman Ruh Sağlığı Ve Sinir Hastalıkları Eah",
+    "city": "İstanbul",
+    "kont": "19",
+    "min": 73.33449,
+    "max": 74.4603
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Yedikule Göğüs Hastalıkları Ve Göğüs Cerrahisi Eah",
+    "city": "İstanbul",
+    "kont": "15",
+    "min": 73.32761,
+    "max": 76.72568
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şişli Hamidiye Etfal Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "17",
+    "min": 73.3194,
+    "max": 75.02435
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "19",
+    "min": 73.31578,
+    "max": 74.64031
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İzmir Alsancak Nevvar Salih İşgören Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "1",
+    "min": 81.28468,
+    "max": 81.28468
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Buca Seyfi Demirsoy Eğitim Ve Araştırma Hastanesi",
+    "city": "İzmir",
+    "kont": "4",
+    "min": 80.88555,
+    "max": 84.91829
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bornova Türkan Özilhan Devlet Hastanesi (İzmir Bayraklı Şehir Hastanesi)",
+    "city": "İzmir",
+    "kont": "2",
+    "min": 80.66642,
+    "max": 83.15684
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İzmir Alsancak Nevvar Salih İşgören Devlet Hastanesi (İzmir Bayraklı Şehir Hastanesi)",
+    "city": "İzmir",
+    "kont": "1",
+    "min": 79.68223,
+    "max": 79.68223
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İzmir Dr.Suat Seren Göğüs Hastalıkları Ve Cerrahisi Eah",
+    "city": "İzmir",
+    "kont": "5",
+    "min": 79.65398,
+    "max": 79.82119
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çiğli Eğitim Ve Araştırma Hastanesi",
+    "city": "İzmir",
+    "kont": "5",
+    "min": 79.27224,
+    "max": 87.3673
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İzmir Atatürk Eğitim Ve Araştırma Hastanesi (İzmir Bayraklı Şehir Hastanesi)",
+    "city": "İzmir",
+    "kont": "7",
+    "min": 78.8038,
+    "max": 79.67861
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İzmir Dr.Suat Seren Göğüs Hastalıkları Ve Cerrahisi Eah (İzmir Bayraklı Şehir Hastanesi)",
+    "city": "İzmir",
+    "kont": "3",
+    "min": 78.48121,
+    "max": 79.35831
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İzmir Bozyaka Eğitim Ve Araştırma Hastanesi (İzmir Bayraklı Şehir Hastanesi)",
+    "city": "İzmir",
+    "kont": "7",
+    "min": 78.14546,
+    "max": 79.06265
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çiğli Eğitim Ve Araştırma Hastanesi (İzmir Bayraklı Şehir Hastanesi)",
+    "city": "İzmir",
+    "kont": "7",
+    "min": 78.02195,
+    "max": 82.50212
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İzmir Tepecik Eğitim Ve Araştırma Hastanesi (İzmir Bayraklı Şehir Hastanesi)",
+    "city": "İzmir",
+    "kont": "11",
+    "min": 77.90304,
+    "max": 81.71436
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bergama Necla Mithat Öztüre Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "2",
+    "min": 77.88432,
+    "max": 78.25291
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Urla Devlet Hastanesi (İzmir Bayraklı Şehir Hastanesi)",
+    "city": "İzmir",
+    "kont": "4",
+    "min": 77.86066,
+    "max": 80.8678
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Torbalı Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "4",
+    "min": 77.77361,
+    "max": 79.26076
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tire Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "2",
+    "min": 77.76408,
+    "max": 77.87478
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ödemiş Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "2",
+    "min": 77.64745,
+    "max": 77.68162
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Beydağ İlçe Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "2",
+    "min": 77.15765,
+    "max": 77.66653
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karaburun İlçe Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "3",
+    "min": 77.07652,
+    "max": 79.05347
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çeşme Alper Çizgenakat Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "4",
+    "min": 77.00589,
+    "max": 78.12216
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Safranbolu Devlet Hastanesi",
+    "city": "Karabük",
+    "kont": "1",
+    "min": 77.89253,
+    "max": 77.89253
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karabük Eğitim Ve Araştırma Hastanesi",
+    "city": "Karabük",
+    "kont": "3",
+    "min": 76.6938,
+    "max": 76.94806
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Eskipazar İlçe Devlet Hastanesi",
+    "city": "Karabük",
+    "kont": "2",
+    "min": 75.8732,
+    "max": 75.92741
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Eflani İlçe Devlet Hastanesi",
+    "city": "Karabük",
+    "kont": "1",
+    "min": 75.23032,
+    "max": 75.23032
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Harakani Devlet Hastanesi",
+    "city": "Kars",
+    "kont": "3",
+    "min": 78.04296,
+    "max": 79.17239
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akyaka İlçe Devlet Hastanesi",
+    "city": "Kars",
+    "kont": "1",
+    "min": 77.14123,
+    "max": 77.14123
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sarıkamış Devlet Hastanesi",
+    "city": "Kars",
+    "kont": "1",
+    "min": 76.48192,
+    "max": 76.48192
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kağızman Devlet Hastanesi",
+    "city": "Kars",
+    "kont": "9",
+    "min": 75.66724,
+    "max": 77.58274
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İnebolu Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "2",
+    "min": 75.83083,
+    "max": 76.12287
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Abana İlçe Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "1",
+    "min": 75.72241,
+    "max": 75.72241
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kastamonu Eğitim Ve Araştırma Hastanesi",
+    "city": "Kastamonu",
+    "kont": "15",
+    "min": 75.62945,
+    "max": 78.35408
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Cide İlçe Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "2",
+    "min": 75.45403,
+    "max": 75.53057
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Taşköprü Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "3",
+    "min": 75.2832,
+    "max": 75.61762
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tosya Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "3",
+    "min": 75.01252,
+    "max": 76.54893
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bozkurt İlçe Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "2",
+    "min": 74.95336,
+    "max": 74.98065
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Azdavay İlçe Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "2",
+    "min": 74.92873,
+    "max": 75.03485
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Araç İlçe Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "1",
+    "min": 74.91002,
+    "max": 74.91002
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kayseri Devlet Hastanesi",
+    "city": "Kayseri",
+    "kont": "2",
+    "min": 80.40034,
+    "max": 81.75444
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kayseri Şehir Hastanesi",
+    "city": "Kayseri",
+    "kont": "9",
+    "min": 79.90003,
+    "max": 87.40014
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Develi Dr. Ekrem Karakaya Devlet Hastanesi",
+    "city": "Kayseri",
+    "kont": "1",
+    "min": 79.70686,
+    "max": 79.70686
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yahyalı Devlet Hastanesi",
+    "city": "Kayseri",
+    "kont": "1",
+    "min": 79.53277,
+    "max": 79.53277
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tomarza Yaşar Karayel Devlet Hastanesi",
+    "city": "Kayseri",
+    "kont": "1",
+    "min": 79.32185,
+    "max": 79.32185
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kayseri Pınarbaşı Devlet Hastanesi",
+    "city": "Kayseri",
+    "kont": "1",
+    "min": 79.19473,
+    "max": 79.19473
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sarız İlçe Devlet Hastanesi",
+    "city": "Kayseri",
+    "kont": "2",
+    "min": 76.8423,
+    "max": 78.42471
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Vize Devlet Hastanesi",
+    "city": "Kırklareli",
+    "kont": "1",
+    "min": 76.05454,
+    "max": 76.05454
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Pınarhisar Devlet Hastanesi",
+    "city": "Kırklareli",
+    "kont": "1",
+    "min": 75.59528,
+    "max": 75.59528
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Babaeski Devlet Hastanesi",
+    "city": "Kırklareli",
+    "kont": "1",
+    "min": 75.29141,
+    "max": 75.29141
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kırklareli Eğitim Ve Araştırma Hastanesi",
+    "city": "Kırklareli",
+    "kont": "3",
+    "min": 75.19615,
+    "max": 75.24903
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Lüleburgaz Devlet Hastanesi",
+    "city": "Kırklareli",
+    "kont": "10",
+    "min": 75.02302,
+    "max": 76.07229
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kilis Prof. Dr. Alaeddin Yavaşca Devlet Hastanesi",
+    "city": "Kilis",
+    "kont": "50",
+    "min": 74.6193,
+    "max": 81.3471
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karamürsel Devlet Hastanesi",
+    "city": "Kocaeli",
+    "kont": "2",
+    "min": 78.07254,
+    "max": 78.49534
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kocaeli Devlet Hastanesi (Kocaeli Şehir Hastanesi)",
+    "city": "Kocaeli",
+    "kont": "8",
+    "min": 77.46153,
+    "max": 78.91451
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gebze Fatih Devlet Hastanesi",
+    "city": "Kocaeli",
+    "kont": "5",
+    "min": 77.12119,
+    "max": 80.39804
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gölcük Necati Çelik Devlet Hastanesi (Kocaeli Şehir Hastanesi)",
+    "city": "Kocaeli",
+    "kont": "3",
+    "min": 76.95989,
+    "max": 79.49039
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kocaeli İzmit Seka Devlet Hastanesi (Kocaeli Şehir Hastanesi)",
+    "city": "Kocaeli",
+    "kont": "12",
+    "min": 76.59625,
+    "max": 77.64516
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kandıra Ecz. Kazım Dinç Devlet Hastanesi",
+    "city": "Kocaeli",
+    "kont": "2",
+    "min": 75.79437,
+    "max": 76.65734
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Körfez Devlet Hastanesi  (Kocaeli Şehir Hastanesi)",
+    "city": "Kocaeli",
+    "kont": "1",
+    "min": 75.72603,
+    "max": 75.72603
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Derince Eğitim Ve Araştırma Hastanesi (Kocaeli Şehir Hastanesi)",
+    "city": "Kocaeli",
+    "kont": "19",
+    "min": 75.7142,
+    "max": 79.13001
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Dilovası Devlet Hastanesi",
+    "city": "Kocaeli",
+    "kont": "5",
+    "min": 75.67774,
+    "max": 76.97402
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Darıca Farabi Eğitim Ve Araştırma Hastanesi (Kocaeli Şehir Hastanesi)",
+    "city": "Kocaeli",
+    "kont": "13",
+    "min": 75.51282,
+    "max": 77.33174
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gebze Fatih Devlet Hastanesi (Kocaeli Şehir Hastanesi)",
+    "city": "Kocaeli",
+    "kont": "10",
+    "min": 75.47998,
+    "max": 76.18988
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gediz Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "1",
+    "min": 78.39054,
+    "max": 78.39054
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tavşanlı Doç. Dr.Mustafa Kalemli Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "4",
+    "min": 76.19809,
+    "max": 77.09523
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kütahya Evliya Çelebi Eğitim Ve Araştırma Hastanesi",
+    "city": "Kütahya",
+    "kont": "39",
+    "min": 76.02629,
+    "max": 81.80636
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Domaniç İlçe Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "1",
+    "min": 75.99671,
+    "max": 75.99671
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Emet Dr.Fazıl Doğan Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "2",
+    "min": 75.90145,
+    "max": 76.31338
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çavdarhisar İlçe Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "1",
+    "min": 75.82853,
+    "max": 75.82853
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şehit Eyüp Hacıoğlu İlçe Devlet Hastanesi",
+    "city": "Malatya",
+    "kont": "1",
+    "min": 78.27525,
+    "max": 78.27525
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Battalgazi Devlet Hastanesi",
+    "city": "Malatya",
+    "kont": "66",
+    "min": 75.46586,
+    "max": 82.02053
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Malatya Yeşilyurt Hasan Çalık Devlet Hastanesi",
+    "city": "Malatya",
+    "kont": "25",
+    "min": 75.1114,
+    "max": 80.05312
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Malatya Eğitim Ve Araştırma Hastanesi",
+    "city": "Malatya",
+    "kont": "208",
+    "min": 74.1883,
+    "max": 81.01497
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Darende Hulusi Efendi Devlet Hastanesi",
+    "city": "Malatya",
+    "kont": "26",
+    "min": 74.10813,
+    "max": 76.53842
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Doğanşehir Şehit Esra Köse Başaran Devlet Hastanesi",
+    "city": "Malatya",
+    "kont": "30",
+    "min": 73.83154,
+    "max": 74.64852
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Pütürge Devlet Hastanesi",
+    "city": "Malatya",
+    "kont": "10",
+    "min": 73.58187,
+    "max": 76.091
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Salihli Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "1",
+    "min": 79.42435,
+    "max": 79.42435
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ahmetli İlçe Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "1",
+    "min": 79.42073,
+    "max": 79.42073
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akhisar Mustafa Kirazoğlu Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "2",
+    "min": 79.13001,
+    "max": 82.00049
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Manisa Merkezefendi Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "7",
+    "min": 78.54133,
+    "max": 83.61477
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Manisa Şehir Hastanesi",
+    "city": "Manisa",
+    "kont": "8",
+    "min": 77.73812,
+    "max": 79.39248
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Turgutlu Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "2",
+    "min": 77.66749,
+    "max": 78.04562
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kula Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "1",
+    "min": 77.47795,
+    "max": 77.47795
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Alaşehir Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "3",
+    "min": 77.17902,
+    "max": 78.23975
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Saruhanlı Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "3",
+    "min": 77.08243,
+    "max": 77.4474
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gölmarmara İlçe Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "1",
+    "min": 76.85872,
+    "max": 76.85872
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Soma Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "5",
+    "min": 76.80451,
+    "max": 77.71941
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kırkağaç Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "2",
+    "min": 76.78218,
+    "max": 76.91884
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sarıgöl Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "1",
+    "min": 76.53842,
+    "max": 76.53842
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Demirci Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "1",
+    "min": 76.0345,
+    "max": 76.0345
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Köprübaşı İlçe Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "1",
+    "min": 75.49278,
+    "max": 75.49278
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Malazgirt Devlet Hastanesi",
+    "city": "Muş",
+    "kont": "1",
+    "min": 86.75266,
+    "max": 86.75266
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Muş Devlet Hastanesi",
+    "city": "Muş",
+    "kont": "2",
+    "min": 81.85694,
+    "max": 82.52446
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Varto Devlet Hastanesi",
+    "city": "Muş",
+    "kont": "1",
+    "min": 81.81227,
+    "max": 81.81227
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bulanık Devlet Hastanesi",
+    "city": "Muş",
+    "kont": "2",
+    "min": 79.57744,
+    "max": 79.72099
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ordu Eğitim Ve Araştırma Hastanesi",
+    "city": "Ordu",
+    "kont": "1",
+    "min": 80.08366,
+    "max": 80.08366
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ordu Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "2",
+    "min": 79.81395,
+    "max": 81.74032
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ordu Ulubey İlçe Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "1",
+    "min": 78.19738,
+    "max": 78.19738
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ünye Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "2",
+    "min": 78.10671,
+    "max": 79.64082
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Fatsa Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "2",
+    "min": 77.41553,
+    "max": 77.93491
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kumru Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "2",
+    "min": 76.62318,
+    "max": 77.36494
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gürgentepe İlçe Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "2",
+    "min": 75.819,
+    "max": 75.94745
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Korgan Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "2",
+    "min": 75.46586,
+    "max": 76.67738
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gölköy Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "5",
+    "min": 75.3962,
+    "max": 75.80125
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mesudiye İlçe Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "1",
+    "min": 74.90772,
+    "max": 74.90772
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aybastı Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "2",
+    "min": 74.81114,
+    "max": 76.36663
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akkuş Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "2",
+    "min": 74.68039,
+    "max": 75.41986
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Toprakkale İlçe Devlet Hastanesi",
+    "city": "Osmaniye",
+    "kont": "5",
+    "min": 74.8476,
+    "max": 77.46153
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Osmaniye Devlet Hastanesi",
+    "city": "Osmaniye",
+    "kont": "70",
+    "min": 74.79569,
+    "max": 80.31099
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bahçe Fizik Tedavi Ve Rehabilitasyon Hastanesi",
+    "city": "Osmaniye",
+    "kont": "23",
+    "min": 74.49447,
+    "max": 78.93685
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Rize Devlet Hastanesi",
+    "city": "Rize",
+    "kont": "6",
+    "min": 75.55291,
+    "max": 76.83639
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çayeli İshakoğlu Devlet Hastanesi",
+    "city": "Rize",
+    "kont": "1",
+    "min": 75.53975,
+    "max": 75.53975
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kaçkar Devlet Hastanesi",
+    "city": "Rize",
+    "kont": "2",
+    "min": 75.16198,
+    "max": 79.57382
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Rize Eğitim Ve Araştırma Hastanesi",
+    "city": "Rize",
+    "kont": "35",
+    "min": 74.99477,
+    "max": 75.94154
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Fındıklı Devlet Hastanesi",
+    "city": "Rize",
+    "kont": "1",
+    "min": 74.70043,
+    "max": 74.70043
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sapanca İlçe Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "1",
+    "min": 86.78091,
+    "max": 86.78091
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karasu Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "1",
+    "min": 79.3419,
+    "max": 79.3419
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akyazı Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "1",
+    "min": 77.96316,
+    "max": 77.96316
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Serdivan Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "9",
+    "min": 77.59686,
+    "max": 79.64444
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kocaali İlçe Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "1",
+    "min": 77.05648,
+    "max": 77.05648
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sakarya Sadıka Sabancı Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "3",
+    "min": 76.95989,
+    "max": 77.68753
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sakarya Eğitim Ve Araştırma Hastanesi",
+    "city": "Sakarya",
+    "kont": "11",
+    "min": 76.3065,
+    "max": 77.93129
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hendek Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "2",
+    "min": 76.02037,
+    "max": 76.24505
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yenikent Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "3",
+    "min": 75.96387,
+    "max": 76.22404
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Taraklı İlçe Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "5",
+    "min": 75.41032,
+    "max": 75.67183
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kaynarca Şehit Gökhan Ayder İlçe Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "1",
+    "min": 75.30915,
+    "max": 75.30915
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Pamukova Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "1",
+    "min": 75.25857,
+    "max": 75.25857
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ferizli İlçe Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "1",
+    "min": 75.15015,
+    "max": 75.15015
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Geyve Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "1",
+    "min": 75.13603,
+    "max": 75.13603
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Samsun Eğitim Ve Araştırma Hastanesi",
+    "city": "Samsun",
+    "kont": "4",
+    "min": 81.00447,
+    "max": 82.2265
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Samsun Gazi Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "3",
+    "min": 80.88784,
+    "max": 81.46831
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bafra Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "7",
+    "min": 79.71411,
+    "max": 82.49621
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çarşamba Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "6",
+    "min": 78.48351,
+    "max": 79.49039
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Alaçam Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "1",
+    "min": 78.25388,
+    "max": 78.25388
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Terme Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "2",
+    "min": 77.99962,
+    "max": 78.46709
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Samsun Ayvacık Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "1",
+    "min": 77.42736,
+    "max": 77.42736
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Salıpazarı İlçe Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "1",
+    "min": 77.37545,
+    "max": 77.37545
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Havza Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "1",
+    "min": 76.18758,
+    "max": 76.18758
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Asarcık İlçe Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "1",
+    "min": 76.06504,
+    "max": 76.06504
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ladik Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "1",
+    "min": 75.88008,
+    "max": 75.88008
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Vezirköprü Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "7",
+    "min": 75.84133,
+    "max": 77.40865
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kurtalan Devlet Hastanesi",
+    "city": "Siirt",
+    "kont": "1",
+    "min": 85.68239,
+    "max": 85.68239
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gerze Devlet Hastanesi",
+    "city": "Sinop",
+    "kont": "1",
+    "min": 77.52986,
+    "max": 77.52986
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sinop Atatürk Devlet Hastanesi",
+    "city": "Sinop",
+    "kont": "9",
+    "min": 76.49375,
+    "max": 83.30993
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ayancık Devlet Hastanesi",
+    "city": "Sinop",
+    "kont": "1",
+    "min": 75.88141,
+    "max": 75.88141
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Boyabat 75.Yıl Devlet Hastanesi",
+    "city": "Sinop",
+    "kont": "2",
+    "min": 75.31736,
+    "max": 75.68003
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Türkeli Devlet Hastanesi",
+    "city": "Sinop",
+    "kont": "1",
+    "min": 75.29599,
+    "max": 75.29599
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Durağan Şehit Hakan Tanrıkulu Devlet Hastanesi",
+    "city": "Sinop",
+    "kont": "1",
+    "min": 74.91002,
+    "max": 74.91002
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sivas Numune Hastanesi",
+    "city": "Sivas",
+    "kont": "3",
+    "min": 80.14837,
+    "max": 81.32476
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yıldızeli Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "1",
+    "min": 79.14643,
+    "max": 79.14643
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Zara Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "1",
+    "min": 78.66255,
+    "max": 78.66255
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kangal Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "1",
+    "min": 78.38463,
+    "max": 78.38463
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gürün Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "1",
+    "min": 78.3245,
+    "max": 78.3245
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gemerek Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "1",
+    "min": 78.29493,
+    "max": 78.29493
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şarkışla Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "1",
+    "min": 78.19508,
+    "max": 78.19508
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Suşehri Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "3",
+    "min": 77.17902,
+    "max": 78.01737
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Doğanşar İlçe Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "1",
+    "min": 77.09656,
+    "max": 77.09656
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Divriği Sadık Özgür Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "1",
+    "min": 76.49834,
+    "max": 76.49834
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Koyulhisar İlçe Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "1",
+    "min": 76.363,
+    "max": 76.363
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İmranlı İlçe Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "1",
+    "min": 75.932,
+    "max": 75.932
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akıncılar İlçe Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "1",
+    "min": 75.15607,
+    "max": 75.15607
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gölova İlçe Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "1",
+    "min": 74.90507,
+    "max": 74.90507
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Siverek Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "18",
+    "min": 79.50911,
+    "max": 82.0087
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Viranşehir Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "15",
+    "min": 79.48448,
+    "max": 83.79381
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hilvan Şehit Halit Şiltak Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "6",
+    "min": 79.21706,
+    "max": 81.01497
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ceylanpınar Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "4",
+    "min": 79.04164,
+    "max": 80.19075
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Halfeti Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "4",
+    "min": 78.39513,
+    "max": 79.42665
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şanlıurfa Mehmet Akif İnan Eğitim Ve Araştırma Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "84",
+    "min": 77.80645,
+    "max": 85.80131
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şanlıurfa Balıklıgöl Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "20",
+    "min": 77.26015,
+    "max": 79.64807
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Birecik Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "12",
+    "min": 76.75163,
+    "max": 82.40095
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şanlıurfa Eğitim Ve Araştırma Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "101",
+    "min": 75.89687,
+    "max": 79.54919
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Suruç Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "16",
+    "min": 75.63995,
+    "max": 77.88299
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Harran Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "6",
+    "min": 75.46815,
+    "max": 76.88238
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akçakale Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "15",
+    "min": 75.26448,
+    "max": 77.00094
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Cizre Dr. Selahattin Cizrelioğlu Devlet Hastanesi",
+    "city": "Şırnak",
+    "kont": "1",
+    "min": 88.40932,
+    "max": 88.40932
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şırnak Devlet Hastanesi",
+    "city": "Şırnak",
+    "kont": "8",
+    "min": 82.2114,
+    "max": 83.51589
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Uludere Devlet Hastanesi",
+    "city": "Şırnak",
+    "kont": "1",
+    "min": 81.01268,
+    "max": 81.01268
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tekirdağ Dr. İsmail Fehmi Cumalıoğlu Şehir Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "28",
+    "min": 75.20436,
+    "max": 81.97586
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çorlu Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "12",
+    "min": 75.11598,
+    "max": 75.92379
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şarköy Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "3",
+    "min": 75.10777,
+    "max": 76.5808
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çerkezköy Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "9",
+    "min": 75.10548,
+    "max": 77.43557
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hayrabolu Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "2",
+    "min": 74.91823,
+    "max": 74.97473
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kapaklı Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "2",
+    "min": 74.91135,
+    "max": 77.47927
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Malkara Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "2",
+    "min": 74.90048,
+    "max": 75.2244
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tekirdağ Saray Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "3",
+    "min": 74.83939,
+    "max": 75.05127
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Muratlı Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "2",
+    "min": 74.80981,
+    "max": 74.97606
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tokat Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "7",
+    "min": 76.63501,
+    "max": 80.4217
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Almus Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "2",
+    "min": 76.16754,
+    "max": 78.27983
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Erbaa Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "3",
+    "min": 76.09329,
+    "max": 76.37351
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Reşadiye Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "2",
+    "min": 75.52828,
+    "max": 75.68595
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Turhal Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "5",
+    "min": 75.3857,
+    "max": 76.43363
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Zile Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "1",
+    "min": 75.32557,
+    "max": 75.32557
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akçaabat Haçkalı Baba Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "2",
+    "min": 78.84256,
+    "max": 80.72425
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Trabzon Yavuz Selim Kemik Hastalıkları Ve Rehabilitasyon Hastanesi",
+    "city": "Trabzon",
+    "kont": "1",
+    "min": 77.69115,
+    "max": 77.69115
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Vakfıkebir Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "1",
+    "min": 76.41588,
+    "max": 76.41588
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Trabzon Fatih Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "4",
+    "min": 76.15112,
+    "max": 78.75913
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Trabzon Ahi Evren Göğüs Kalp Ve Damar Cerrahisi Eğitim Ve Araştırma Hastanesi",
+    "city": "Trabzon",
+    "kont": "2",
+    "min": 76.08508,
+    "max": 78.65893
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Trabzon Kanuni Eğitim Ve Araştırma Hastanesi",
+    "city": "Trabzon",
+    "kont": "10",
+    "min": 76.06866,
+    "max": 78.79559
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Araklı Bayram Halil Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "1",
+    "min": 75.96158,
+    "max": 75.96158
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Maçka Ömer Burhanoğlu Fizik Tedavi Ve Rehabilitasyon Hastanesi",
+    "city": "Trabzon",
+    "kont": "1",
+    "min": 75.90604,
+    "max": 75.90604
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sürmene Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "1",
+    "min": 75.81079,
+    "max": 75.81079
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Of Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "4",
+    "min": 75.61303,
+    "max": 75.97208
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tonya Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "1",
+    "min": 75.50824,
+    "max": 75.50824
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Köprübaşı Vali Recep Yazıcıoğlu İlçe Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "1",
+    "min": 74.95831,
+    "max": 74.95831
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Trabzon Ataköy Ruh Ve Sinir Hastalıkları Hastanesi",
+    "city": "Trabzon",
+    "kont": "1",
+    "min": 74.79931,
+    "max": 74.79931
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Banaz Devlet Hastanesi",
+    "city": "Uşak",
+    "kont": "1",
+    "min": 80.8806,
+    "max": 80.8806
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sivaslı İlçe Devlet Hastanesi",
+    "city": "Uşak",
+    "kont": "1",
+    "min": 79.43486,
+    "max": 79.43486
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Eşme Devlet Hastanesi",
+    "city": "Uşak",
+    "kont": "1",
+    "min": 77.49207,
+    "max": 77.49207
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çatak Devlet Hastanesi",
+    "city": "Van",
+    "kont": "1",
+    "min": 82.62466,
+    "max": 82.62466
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Van Eğitim Ve Araştırma Hastanesi",
+    "city": "Van",
+    "kont": "25",
+    "min": 79.9907,
+    "max": 83.75144
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Özalp Devlet Hastanesi",
+    "city": "Van",
+    "kont": "1",
+    "min": 79.91645,
+    "max": 79.91645
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Van Saray İlçe Devlet Hastanesi",
+    "city": "Van",
+    "kont": "1",
+    "min": 79.79886,
+    "max": 79.79886
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Muradiye Devlet Hastanesi",
+    "city": "Van",
+    "kont": "1",
+    "min": 79.67632,
+    "max": 79.67632
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Erciş Şehit Rıdvan Çevik Devlet Hastanesi",
+    "city": "Van",
+    "kont": "5",
+    "min": 79.65495,
+    "max": 80.28274
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Başkale Devlet Hastanesi",
+    "city": "Van",
+    "kont": "1",
+    "min": 79.43027,
+    "max": 79.43027
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çaldıran Devlet Hastanesi",
+    "city": "Van",
+    "kont": "1",
+    "min": 79.0193,
+    "max": 79.0193
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Boğazlıyan Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "1",
+    "min": 79.59386,
+    "max": 79.59386
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sorgun Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "1",
+    "min": 77.92078,
+    "max": 77.92078
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sarıkaya Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "1",
+    "min": 77.1731,
+    "max": 77.1731
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çandır İlçe Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "1",
+    "min": 77.02593,
+    "max": 77.02593
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çayıralan İlçe Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "1",
+    "min": 76.77035,
+    "max": 76.77035
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şefaatli Şehit Osman Belkaya Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "1",
+    "min": 76.65734,
+    "max": 76.65734
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yozgat Şehir Hastanesi",
+    "city": "Yozgat",
+    "kont": "19",
+    "min": 76.39125,
+    "max": 79.85536
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Saraykent Şehit Beytullah Yeşilay İlçe Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "1",
+    "min": 75.94842,
+    "max": 75.94842
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çekerek Şehit Harun Koçak Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "1",
+    "min": 75.57524,
+    "max": 75.57524
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yenifakılı İlçe Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "2",
+    "min": 75.35877,
+    "max": 75.93103
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akdağmadeni Şehit Sinan Babacan Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "2",
+    "min": 75.2244,
+    "max": 75.27269
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yozgat Aydıncık İlçe Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "3",
+    "min": 75.09136,
+    "max": 75.63536
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kadışehri İlçe Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "2",
+    "min": 74.98523,
+    "max": 75.17152
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karadeniz Ereğli Devlet Hastanesi",
+    "city": "Zonguldak",
+    "kont": "5",
+    "min": 75.64949,
+    "max": 76.363
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Zonguldak Atatürk Devlet Hastanesi",
+    "city": "Zonguldak",
+    "kont": "17",
+    "min": 75.53649,
+    "max": 78.71313
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çaycuma Devlet Hastanesi",
+    "city": "Zonguldak",
+    "kont": "4",
+    "min": 75.22899,
+    "max": 75.68957
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Devrek Devlet Hastanesi",
+    "city": "Zonguldak",
+    "kont": "1",
+    "min": 75.04306,
+    "max": 75.04306
+  }
+]
+        const ta1 = [
+  {
+    "location": "T.C. Sağlık Bakanlığı Adana Çukurova Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "9",
+    "min": 81.04684,
+    "max": 85.99907
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adana 5 Ocak Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "9",
+    "min": 80.57576,
+    "max": 88.13502
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adana Şehir Hastanesi",
+    "city": "Adana",
+    "kont": "44",
+    "min": 79.38198,
+    "max": 87.11763
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Seyhan Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "27",
+    "min": 78.36096,
+    "max": 86.33349
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adana Yüreğir Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "27",
+    "min": 77.20003,
+    "max": 80.85368
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İmamoğlu Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "1",
+    "min": 76.80451,
+    "max": 76.80451
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ceyhan Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "13",
+    "min": 75.80946,
+    "max": 78.60701
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adana Yüreğir Devlet Hastanesi (Adana Yüreğir Karşıyaka D.H.)",
+    "city": "Adana",
+    "kont": "44",
+    "min": 75.48916,
+    "max": 78.74138
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aladağ İlçe Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "2",
+    "min": 74.35418,
+    "max": 75.61629
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Feke İlçe Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "3",
+    "min": 73.19783,
+    "max": 74.71915
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Saimbeyli Şehit Uzman Çavuş Adem Ambarcı İlçe Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "4",
+    "min": 72.27243,
+    "max": 73.51583
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tufanbeyli Devlet Hastanesi",
+    "city": "Adana",
+    "kont": "4",
+    "min": 71.38712,
+    "max": 72.54576
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adıyaman Eğitim Ve Araştırma Hastanesi",
+    "city": "Adıyaman",
+    "kont": "39",
+    "min": 77.90666,
+    "max": 87.70402
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gerger İlçe Devlet Hastanesi",
+    "city": "Adıyaman",
+    "kont": "2",
+    "min": 77.12481,
+    "max": 77.8702
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sinanpaşa Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "1",
+    "min": 77.45561,
+    "max": 77.45561
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bayat Dr.Mete Tan İlçe Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "1",
+    "min": 73.18865,
+    "max": 73.18865
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Dinar Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "7",
+    "min": 72.79773,
+    "max": 75.47045
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Afyonkarahisar Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "55",
+    "min": 71.51787,
+    "max": 86.26153
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Evciler İlçe Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "5",
+    "min": 71.36708,
+    "max": 72.64464
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İhsaniye İlçe Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "3",
+    "min": 70.84903,
+    "max": 72.07468
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çobanlar İlçe Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "4",
+    "min": 70.80073,
+    "max": 74.83118
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Başmakçı İlçe Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "4",
+    "min": 70.21073,
+    "max": 72.8884
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çay Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "11",
+    "min": 69.75642,
+    "max": 70.97253
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şuhut Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "6",
+    "min": 69.6503,
+    "max": 79.0193
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sandıklı Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "6",
+    "min": 69.50313,
+    "max": 71.60262
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Emirdağ Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "8",
+    "min": 69.45713,
+    "max": 75.86499
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bolvadin Dr.Halil İbrahim Özsoy Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "8",
+    "min": 69.09711,
+    "max": 70.74556
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sultandağı İlçe Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "3",
+    "min": 68.80833,
+    "max": 74.49084
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Haydarlı İlçe Devlet Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "3",
+    "min": 68.69436,
+    "max": 69.6148
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hocalar İlçe Hastanesi",
+    "city": "Afyonkarahisar",
+    "kont": "5",
+    "min": 68.60598,
+    "max": 69.19237
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ağrı Eğitim Ve Araştırma Hastanesi",
+    "city": "Ağrı",
+    "kont": "19",
+    "min": 77.13664,
+    "max": 86.1804
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Doğubayazıt Dr.Yaşar Eryılmaz Devlet Hastanesi",
+    "city": "Ağrı",
+    "kont": "14",
+    "min": 76.77035,
+    "max": 82.11941
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Patnos Devlet Hastanesi",
+    "city": "Ağrı",
+    "kont": "17",
+    "min": 76.74342,
+    "max": 84.14695
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Taşlıçay İlçe Devlet Hastanesi",
+    "city": "Ağrı",
+    "kont": "2",
+    "min": 76.30747,
+    "max": 77.13894
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Diyadin Devlet Hastanesi",
+    "city": "Ağrı",
+    "kont": "5",
+    "min": 75.12419,
+    "max": 78.13858
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tutak İlçe Devlet Hastanesi",
+    "city": "Ağrı",
+    "kont": "4",
+    "min": 74.86764,
+    "max": 81.6779
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aksaray Eğitim Ve Araştırma Hastanesi",
+    "city": "Aksaray",
+    "kont": "14",
+    "min": 77.87708,
+    "max": 85.60585
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sultanhanı Dr.Hüseyin Ağır İlçe Devlet Hastanesi",
+    "city": "Aksaray",
+    "kont": "4",
+    "min": 76.05551,
+    "max": 86.13573
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Eskil Devlet Hastanesi",
+    "city": "Aksaray",
+    "kont": "1",
+    "min": 75.50461,
+    "max": 75.50461
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ağaçören İlçe Devlet Hastanesi",
+    "city": "Aksaray",
+    "kont": "1",
+    "min": 74.37422,
+    "max": 74.37422
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Suluova Devlet Hastanesi",
+    "city": "Amasya",
+    "kont": "3",
+    "min": 74.47539,
+    "max": 80.08728
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Amasya Sabuncuoğlu Şerefeddin Eğitim Ve Araştırma Hastanesi",
+    "city": "Amasya",
+    "kont": "9",
+    "min": 74.32955,
+    "max": 83.54644
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hamamözü İlçe Devlet Hastanesi",
+    "city": "Amasya",
+    "kont": "1",
+    "min": 71.95708,
+    "max": 71.95708
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çubuk Halil Şıvgın Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "1",
+    "min": 83.47943,
+    "max": 83.47943
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ankara Gaziler Fizik Tedavi Ve Rehabilitasyon Eah",
+    "city": "Ankara",
+    "kont": "4",
+    "min": 82.08754,
+    "max": 87.57918
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ayaş Şehit Mehmet Çifci Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "1",
+    "min": 81.6342,
+    "max": 81.6342
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Elmadağ Dr. Hulusi Alataş Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "1",
+    "min": 81.39636,
+    "max": 81.39636
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ankara Beytepe Şehit Murat Erdi Eker Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "1",
+    "min": 81.05964,
+    "max": 81.05964
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mamak Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "9",
+    "min": 80.43088,
+    "max": 85.34205
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ankara Yenimahalle Eğitim Ve Araştırma Hastanesi",
+    "city": "Ankara",
+    "kont": "4",
+    "min": 79.86816,
+    "max": 86.99871
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akyurt Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "4",
+    "min": 78.61788,
+    "max": 83.76786
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ankara Atatürk Sanatoryum Eğitim Ve Araştırma Hastanesi",
+    "city": "Ankara",
+    "kont": "11",
+    "min": 77.00324,
+    "max": 88.09132
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Polatlı Duatepe Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "3",
+    "min": 76.30518,
+    "max": 76.9681
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ankara Eğitim Ve Araştırma Hastanesi",
+    "city": "Ankara",
+    "kont": "9",
+    "min": 75.56112,
+    "max": 79.93746
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ankara Gülhane Eğitim Ve Araştırma Hastanesi",
+    "city": "Ankara",
+    "kont": "20",
+    "min": 75.5447,
+    "max": 85.69652
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kahramankazan Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "9",
+    "min": 75.2244,
+    "max": 78.38233
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kızılcahamam Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "1",
+    "min": 74.48722,
+    "max": 74.48722
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Haymana Devlet Hastanesi",
+    "city": "Ankara",
+    "kont": "2",
+    "min": 73.58416,
+    "max": 73.66433
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ankara Etlik Şehir Hastanesi",
+    "city": "Ankara",
+    "kont": "188",
+    "min": 73.43567,
+    "max": 87.92773
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ankara Bilkent Şehir Hastanesi",
+    "city": "Ankara",
+    "kont": "442",
+    "min": 70.62893,
+    "max": 84.00799
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sincan Eğitim Ve Araştırma Hastanesi",
+    "city": "Ankara",
+    "kont": "185",
+    "min": 70.62531,
+    "max": 81.5189
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Finike Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "6",
+    "min": 76.07687,
+    "max": 79.33827
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Korkuteli Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "7",
+    "min": 74.13312,
+    "max": 81.29977
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kumluca Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "11",
+    "min": 73.89722,
+    "max": 80.5393
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Manavgat Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "14",
+    "min": 73.75137,
+    "max": 82.32308
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kaş Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "5",
+    "min": 73.72674,
+    "max": 77.15898
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Elmalı Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "4",
+    "min": 73.62557,
+    "max": 77.01869
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Demre Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "1",
+    "min": 72.9449,
+    "max": 72.9449
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kemer Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "6",
+    "min": 72.84699,
+    "max": 80.92792
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kepez Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "43",
+    "min": 72.71394,
+    "max": 83.39697
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Antalya Atatürk Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "33",
+    "min": 72.55397,
+    "max": 85.46327
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Alanya Eğitim Ve Araştırma Hastanesi",
+    "city": "Antalya",
+    "kont": "45",
+    "min": 72.21822,
+    "max": 83.41701
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Serik Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "14",
+    "min": 71.78492,
+    "max": 81.60268
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Antalya Eğitim Ve Araştırma Hastanesi",
+    "city": "Antalya",
+    "kont": "151",
+    "min": 71.45183,
+    "max": 85.54573
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gündoğmuş İlçe Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "4",
+    "min": 71.39666,
+    "max": 72.02409
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akseki Devlet Hastanesi",
+    "city": "Antalya",
+    "kont": "1",
+    "min": 70.82077,
+    "max": 70.82077
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Antalya Şehir Hastanesi",
+    "city": "Antalya",
+    "kont": "360",
+    "min": 70.04122,
+    "max": 87.90769
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Antalya Şehir Hastanesi (Döşeme Altı D.H.)",
+    "city": "Antalya",
+    "kont": "75",
+    "min": 69.97289,
+    "max": 84.52375
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ardahan Devlet Hastanesi",
+    "city": "Ardahan",
+    "kont": "37",
+    "min": 70.90553,
+    "max": 76.75852
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Göle Devlet Hastanesi",
+    "city": "Ardahan",
+    "kont": "11",
+    "min": 70.35198,
+    "max": 73.91858
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çıldır İlçe Devlet Hastanesi",
+    "city": "Ardahan",
+    "kont": "3",
+    "min": 70.28268,
+    "max": 70.6194
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Arhavi Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "2",
+    "min": 71.90288,
+    "max": 72.00405
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Murgul İlçe Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "2",
+    "min": 71.10232,
+    "max": 71.4272
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Borçka Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "3",
+    "min": 70.88186,
+    "max": 74.81935
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Artvin Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "20",
+    "min": 70.79482,
+    "max": 76.49702
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hopa Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "7",
+    "min": 70.52643,
+    "max": 75.94154
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şavşat Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "2",
+    "min": 70.43311,
+    "max": 74.299
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yusufeli Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "4",
+    "min": 70.0813,
+    "max": 72.05826
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ardanuç İlçe Devlet Hastanesi",
+    "city": "Artvin",
+    "kont": "1",
+    "min": 69.36779,
+    "max": 69.36779
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aydın Atatürk Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "11",
+    "min": 78.40105,
+    "max": 84.81809
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karpuzlu İlçe Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "1",
+    "min": 78.36229,
+    "max": 78.36229
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sultanhisar İlçe Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "2",
+    "min": 77.65469,
+    "max": 78.67076
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Buharkent İlçe Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "4",
+    "min": 76.78447,
+    "max": 84.42487
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Nazilli Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "14",
+    "min": 76.5808,
+    "max": 83.09442
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aydın Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "31",
+    "min": 75.87779,
+    "max": 81.35036
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aydın Kadın Doğum Ve Çocuk Hastalıkları Hastanesi",
+    "city": "Aydın",
+    "kont": "23",
+    "min": 74.15642,
+    "max": 78.40467
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Didim Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "11",
+    "min": 73.81379,
+    "max": 81.31161
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Söke Fehime Faik Kocagöz Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "25",
+    "min": 73.60058,
+    "max": 82.17362
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kuşadası Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "18",
+    "min": 73.36866,
+    "max": 83.97153
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çine Devlet Hastanesi",
+    "city": "Aydın",
+    "kont": "9",
+    "min": 72.77539,
+    "max": 77.32027
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gönen Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "2",
+    "min": 81.56127,
+    "max": 82.49391
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Burhaniye Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "4",
+    "min": 80.93613,
+    "max": 87.18826
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gömeç İlçe Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "3",
+    "min": 77.34852,
+    "max": 80.29192
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Edremit Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "4",
+    "min": 77.24011,
+    "max": 80.59809
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Havran Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 77.1859,
+    "max": 77.1859
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Balıkesir Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "9",
+    "min": 75.94612,
+    "max": 82.73405
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İvrindi Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 74.67677,
+    "max": 74.67677
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Manyas Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "1",
+    "min": 74.12226,
+    "max": 74.12226
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bandırma Eğitim Ve Araştırma Hastanesi",
+    "city": "Balıkesir",
+    "kont": "14",
+    "min": 73.94092,
+    "max": 80.74659
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kepsut İlçe Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "3",
+    "min": 72.83286,
+    "max": 81.26102
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bigadiç Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "2",
+    "min": 72.16667,
+    "max": 81.03863
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Savaştepe Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "2",
+    "min": 72.08421,
+    "max": 75.75887
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Balıkesir Atatürk Şehir Hastanesi",
+    "city": "Balıkesir",
+    "kont": "93",
+    "min": 71.99717,
+    "max": 91.63196
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Marmara Süleyman İlik İlçe Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "3",
+    "min": 71.89105,
+    "max": 72.49977
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Dursunbey Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "2",
+    "min": 71.33521,
+    "max": 71.44591
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Susurluk Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "16",
+    "min": 71.21303,
+    "max": 74.61339
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sındırgı Devlet Hastanesi",
+    "city": "Balıkesir",
+    "kont": "16",
+    "min": 70.32373,
+    "max": 77.51441
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bartın Devlet Hastanesi",
+    "city": "Bartın",
+    "kont": "17",
+    "min": 71.18574,
+    "max": 81.49886
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kozluk Devlet Hastanesi",
+    "city": "Batman",
+    "kont": "1",
+    "min": 88.98025,
+    "max": 88.98025
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bayburt Devlet Hastanesi",
+    "city": "Bayburt",
+    "kont": "10",
+    "min": 71.34112,
+    "max": 77.76408
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bozüyük Devlet Hastanesi",
+    "city": "Bilecik",
+    "kont": "13",
+    "min": 74.15413,
+    "max": 79.86454
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bilecik Eğitim Ve Araştırma Hastanesi",
+    "city": "Bilecik",
+    "kont": "15",
+    "min": 72.64235,
+    "max": 78.95097
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Söğüt Devlet Hastanesi",
+    "city": "Bilecik",
+    "kont": "1",
+    "min": 69.82572,
+    "max": 69.82572
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karlıova Devlet Hastanesi",
+    "city": "Bingöl",
+    "kont": "2",
+    "min": 81.36714,
+    "max": 81.85694
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kiğı İlçe Devlet Hastanesi",
+    "city": "Bingöl",
+    "kont": "2",
+    "min": 79.46081,
+    "max": 79.64444
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adaklı İlçe Devlet Hastanesi",
+    "city": "Bingöl",
+    "kont": "1",
+    "min": 78.01375,
+    "max": 78.01375
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tatvan Devlet Hastanesi",
+    "city": "Bitlis",
+    "kont": "16",
+    "min": 83.06485,
+    "max": 90.9007
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ahlat Devlet Hastanesi",
+    "city": "Bitlis",
+    "kont": "3",
+    "min": 82.72584,
+    "max": 84.39891
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bitlis Devlet Hastanesi",
+    "city": "Bitlis",
+    "kont": "12",
+    "min": 81.91344,
+    "max": 86.7185
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Adilcevaz Onkoloji Hastanesi",
+    "city": "Bitlis",
+    "kont": "1",
+    "min": 81.63782,
+    "max": 81.63782
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hizan Devlet Hastanesi",
+    "city": "Bitlis",
+    "kont": "2",
+    "min": 80.47458,
+    "max": 81.49656
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mutki İlçe Devlet Hastanesi",
+    "city": "Bitlis",
+    "kont": "2",
+    "min": 80.19896,
+    "max": 80.60171
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mengen Dr.Mustafa Körpeoğlu İlçe Devlet Hastanesi",
+    "city": "Bolu",
+    "kont": "1",
+    "min": 73.76321,
+    "max": 73.76321
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bolu İzzet Baysal Devlet Hastanesi",
+    "city": "Bolu",
+    "kont": "23",
+    "min": 73.35683,
+    "max": 80.64409
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bolu İzzet Baysal Eğitim Ve Araştırma Hastanesi",
+    "city": "Bolu",
+    "kont": "72",
+    "min": 70.30272,
+    "max": 75.63995
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yeniçağa İlçe Devlet Hastanesi",
+    "city": "Bolu",
+    "kont": "1",
+    "min": 70.23668,
+    "max": 70.23668
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gerede Devlet Hastanesi",
+    "city": "Bolu",
+    "kont": "7",
+    "min": 70.05535,
+    "max": 80.93384
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Göynük Şehit Ziya Sarpkaya İlçe Devlet Hastanesi",
+    "city": "Bolu",
+    "kont": "1",
+    "min": 69.52087,
+    "max": 69.52087
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yeşilova Devlet Hastanesi",
+    "city": "Burdur",
+    "kont": "1",
+    "min": 78.94047,
+    "max": 78.94047
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tefenni İlçe Devlet Hastanesi",
+    "city": "Burdur",
+    "kont": "2",
+    "min": 77.85704,
+    "max": 82.24062
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bursa İlker Çelikcan Fizik Tedavi Ve Rehabilitasyon Hastanesi",
+    "city": "Bursa",
+    "kont": "4",
+    "min": 75.45862,
+    "max": 78.55775
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mudanya Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "9",
+    "min": 74.75693,
+    "max": 78.40467
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kestel Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "9",
+    "min": 74.26943,
+    "max": 86.70075
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bursa Şehir Hastanesi",
+    "city": "Bursa",
+    "kont": "76",
+    "min": 73.59599,
+    "max": 87.68397
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gürsu Cüneyt Yıldız Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "9",
+    "min": 73.55229,
+    "max": 81.44598
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gemlik Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "19",
+    "min": 72.80594,
+    "max": 79.31002
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çekirge Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "44",
+    "min": 72.70803,
+    "max": 82.3395
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karacabey Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "9",
+    "min": 72.17947,
+    "max": 82.43971
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bursa Ali Osman Sönmez Onkoloji Hastanesi",
+    "city": "Bursa",
+    "kont": "9",
+    "min": 71.81221,
+    "max": 76.50293
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İnegöl Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "18",
+    "min": 71.64729,
+    "max": 75.75658
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bursa Dörtçelik Çocuk Hastalıkları Hastanesi",
+    "city": "Bursa",
+    "kont": "9",
+    "min": 71.59079,
+    "max": 86.98459
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mustafakemalpaşa Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "24",
+    "min": 70.95611,
+    "max": 76.08871
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İznik Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "8",
+    "min": 70.59247,
+    "max": 73.39329
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bursa Yüksek İhtisas Eğitim Ve Araştırma Hastanesi",
+    "city": "Bursa",
+    "kont": "140",
+    "min": 70.54515,
+    "max": 78.05842
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Orhangazi Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "9",
+    "min": 70.48635,
+    "max": 73.44061
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Harmancık İlçe Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "2",
+    "min": 70.24622,
+    "max": 71.18212
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yenişehir Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "14",
+    "min": 70.04943,
+    "max": 74.1965
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Orhaneli Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "9",
+    "min": 69.84347,
+    "max": 74.28126
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Keles İlçe Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "2",
+    "min": 69.40292,
+    "max": 69.72455
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Büyükorhan İlçe Devlet Hastanesi",
+    "city": "Bursa",
+    "kont": "2",
+    "min": 69.263,
+    "max": 69.60333
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ezine Devlet Hastanesi",
+    "city": "Çanakkale",
+    "kont": "3",
+    "min": 75.56244,
+    "max": 82.90126
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Biga Devlet Hastanesi",
+    "city": "Çanakkale",
+    "kont": "4",
+    "min": 74.95107,
+    "max": 80.72655
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gökçeada Devlet Hastanesi",
+    "city": "Çanakkale",
+    "kont": "1",
+    "min": 74.94286,
+    "max": 74.94286
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çan Devlet Hastanesi",
+    "city": "Çanakkale",
+    "kont": "2",
+    "min": 74.51089,
+    "max": 74.60976
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şabanözü Dr. Sami Baran İlçe Devlet Hastanesi",
+    "city": "Çankırı",
+    "kont": "1",
+    "min": 73.8325,
+    "max": 73.8325
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çerkeş Devlet Hastanesi",
+    "city": "Çankırı",
+    "kont": "1",
+    "min": 71.82863,
+    "max": 71.82863
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Orta İlçe Devlet Hastanesi",
+    "city": "Çankırı",
+    "kont": "2",
+    "min": 71.82042,
+    "max": 74.19059
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çankırı Devlet Hastanesi",
+    "city": "Çankırı",
+    "kont": "7",
+    "min": 71.42358,
+    "max": 79.56561
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ilgaz Devlet Hastanesi",
+    "city": "Çankırı",
+    "kont": "1",
+    "min": 69.5915,
+    "max": 69.5915
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Atkaracalar İlçe Devlet Hastanesi",
+    "city": "Çankırı",
+    "kont": "2",
+    "min": 68.89441,
+    "max": 69.18416
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Osmancık Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "2",
+    "min": 74.15872,
+    "max": 75.24674
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çorum Erol Olçok Eğitim Ve Araştırma Hastanesi",
+    "city": "Çorum",
+    "kont": "20",
+    "min": 72.47381,
+    "max": 82.56092
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ortaköy İlçe Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "1",
+    "min": 72.34439,
+    "max": 72.34439
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Alaca Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "5",
+    "min": 71.71925,
+    "max": 74.59793
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sungurlu Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "5",
+    "min": 71.46499,
+    "max": 75.44811
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İskilip Atıf Hoca Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "5",
+    "min": 71.46004,
+    "max": 75.03123
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Uğurludağ Şehit Sami Saygı İlçe Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "1",
+    "min": 71.25178,
+    "max": 71.25178
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bayat Devlet Hastanesi",
+    "city": "Çorum",
+    "kont": "2",
+    "min": 70.67952,
+    "max": 70.95249
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tavas Devlet Hastanesi",
+    "city": "Denizli",
+    "kont": "3",
+    "min": 82.2137,
+    "max": 84.57433
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çal Devlet Hastanesi",
+    "city": "Denizli",
+    "kont": "1",
+    "min": 79.3961,
+    "max": 79.3961
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çivril Şehit Hilmi Öz Devlet Hastanesi",
+    "city": "Denizli",
+    "kont": "4",
+    "min": 77.678,
+    "max": 82.36546
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çameli İlçe Devlet Hastanesi",
+    "city": "Denizli",
+    "kont": "2",
+    "min": 74.36698,
+    "max": 74.9629
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Silvan Dr.Yusuf Azizoğlu Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "1",
+    "min": 85.78719,
+    "max": 85.78719
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bismil Tepe İlçe Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "3",
+    "min": 85.17846,
+    "max": 86.74675
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çermik Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "3",
+    "min": 84.7215,
+    "max": 84.81941
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çüngüş İlçe Devlet Hastanesi",
+    "city": "Diyarbakır",
+    "kont": "2",
+    "min": 84.08224,
+    "max": 84.35424
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akçakoca Devlet Hastanesi",
+    "city": "Düzce",
+    "kont": "1",
+    "min": 78.08304,
+    "max": 78.08304
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çilimli İlçe Devlet Hastanesi",
+    "city": "Düzce",
+    "kont": "2",
+    "min": 74.32231,
+    "max": 78.03379
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Düzce Atatürk Devlet Hastanesi",
+    "city": "Düzce",
+    "kont": "25",
+    "min": 72.25239,
+    "max": 82.39371
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kaynaşlı İlçe Devlet Hastanesi",
+    "city": "Düzce",
+    "kont": "1",
+    "min": 72.09701,
+    "max": 72.09701
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gümüşova İlçe Devlet Hastanesi",
+    "city": "Düzce",
+    "kont": "4",
+    "min": 71.79446,
+    "max": 72.95311
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gölyaka İlçe Devlet Hastanesi",
+    "city": "Düzce",
+    "kont": "3",
+    "min": 70.5734,
+    "max": 71.34474
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yığılca İlçe Devlet Hastanesi",
+    "city": "Düzce",
+    "kont": "3",
+    "min": 69.5478,
+    "max": 69.76692
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Edirne Sultan 1. Murat Devlet Hastanesi",
+    "city": "Edirne",
+    "kont": "43",
+    "min": 69.54683,
+    "max": 80.51696
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Keşan Devlet Hastanesi",
+    "city": "Edirne",
+    "kont": "28",
+    "min": 68.84974,
+    "max": 72.6351
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Uzunköprü Devlet Hastanesi",
+    "city": "Edirne",
+    "kont": "36",
+    "min": 68.82016,
+    "max": 77.00819
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Enez İlçe Devlet Hastanesi",
+    "city": "Edirne",
+    "kont": "2",
+    "min": 68.80374,
+    "max": 70.15785
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Meriç İlçe Devlet Hastanesi",
+    "city": "Edirne",
+    "kont": "1",
+    "min": 68.49757,
+    "max": 68.49757
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı  İpsala Devlet Hastanesi",
+    "city": "Edirne",
+    "kont": "12",
+    "min": 68.12801,
+    "max": 69.03107
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karakoçan Devlet Hastanesi",
+    "city": "Elazığ",
+    "kont": "2",
+    "min": 84.94654,
+    "max": 85.5188
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Maden Şehit Cengiz Erdur İlçe Devlet Hastanesi",
+    "city": "Elazığ",
+    "kont": "1",
+    "min": 84.41895,
+    "max": 84.41895
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Baskil İlçe Devlet Hastanesi",
+    "city": "Elazığ",
+    "kont": "1",
+    "min": 81.76036,
+    "max": 81.76036
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Elazığ Fethi Sekin Şehir Hastanesi",
+    "city": "Elazığ",
+    "kont": "25",
+    "min": 81.60136,
+    "max": 89.36659
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Palu İlçe Devlet Hastanesi",
+    "city": "Elazığ",
+    "kont": "1",
+    "min": 81.45189,
+    "max": 81.45189
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kovancılar Devlet Hastanesi",
+    "city": "Elazığ",
+    "kont": "5",
+    "min": 81.33527,
+    "max": 84.6062
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Arıcak İlçe Devlet Hastanesi",
+    "city": "Elazığ",
+    "kont": "1",
+    "min": 79.35373,
+    "max": 79.35373
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Elazığ Ruh Sağlığı Ve Hastalıkları Hastanesi",
+    "city": "Elazığ",
+    "kont": "4",
+    "min": 78.85668,
+    "max": 81.21043
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Üzümlü İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "7",
+    "min": 72.30068,
+    "max": 78.39151
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kemaliye İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "5",
+    "min": 71.78987,
+    "max": 76.87152
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Erzincan Mengücek Gazi Eah",
+    "city": "Erzincan",
+    "kont": "120",
+    "min": 71.78758,
+    "max": 80.27912
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İliç İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "1",
+    "min": 71.44954,
+    "max": 71.44954
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tercan İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "9",
+    "min": 71.17753,
+    "max": 76.34526
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Refahiye Dr. Fahrettin Uğur İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "9",
+    "min": 70.55831,
+    "max": 74.7451
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çayırlı İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "5",
+    "min": 70.44168,
+    "max": 71.50471
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Otlukbeli İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "6",
+    "min": 70.29089,
+    "max": 70.55565
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kemah İlçe Devlet Hastanesi",
+    "city": "Erzincan",
+    "kont": "3",
+    "min": 69.61154,
+    "max": 71.08457
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Erzurum Şehir Hastanesi",
+    "city": "Erzurum",
+    "kont": "40",
+    "min": 75.92379,
+    "max": 84.77933
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Köprüköy İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "1",
+    "min": 75.58707,
+    "max": 75.58707
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tortum İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "2",
+    "min": 75.2832,
+    "max": 83.2981
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Pasinler İbrahim Hakkı Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "4",
+    "min": 74.33546,
+    "max": 75.79992
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aşkale İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "3",
+    "min": 74.11043,
+    "max": 74.3013
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Uzundere Şehit İhsan Erdoğan İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "2",
+    "min": 74.0835,
+    "max": 81.07147
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İspir Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "1",
+    "min": 73.61145,
+    "max": 73.61145
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hınıs Şehit Yavuz Yürekseven Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "4",
+    "min": 73.47937,
+    "max": 77.31436
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Horasan Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "10",
+    "min": 73.2192,
+    "max": 76.65964
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Oltu Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "2",
+    "min": 72.91073,
+    "max": 74.23526
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Olur İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "4",
+    "min": 70.83357,
+    "max": 77.06336
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tekman Şehit Piyade Çavuş Muhammet Binici Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "3",
+    "min": 70.78431,
+    "max": 76.97993
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karayazı Türk Eczacıları Birliği İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "4",
+    "min": 70.65489,
+    "max": 72.09472
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Narman İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "2",
+    "min": 70.09772,
+    "max": 72.77769
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Pazaryolu Hasan Basri Demirbağ İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "2",
+    "min": 69.86447,
+    "max": 70.36285
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şenkaya İlçe Devlet Hastanesi",
+    "city": "Erzurum",
+    "kont": "3",
+    "min": 69.36187,
+    "max": 70.77936
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Alpu İlçe Devlet Hastanesi",
+    "city": "Eskişehir",
+    "kont": "1",
+    "min": 82.83425,
+    "max": 82.83425
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Eskişehir Yunus Emre Devlet Hastanesi",
+    "city": "Eskişehir",
+    "kont": "30",
+    "min": 78.93093,
+    "max": 86.32528
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Eskişehir Şehir Hastanesi",
+    "city": "Eskişehir",
+    "kont": "41",
+    "min": 77.38269,
+    "max": 86.42054
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mahmudiye İlçe Devlet Hastanesi",
+    "city": "Eskişehir",
+    "kont": "1",
+    "min": 73.53358,
+    "max": 73.53358
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çifteler Devlet Hastanesi",
+    "city": "Eskişehir",
+    "kont": "2",
+    "min": 71.84275,
+    "max": 73.24745
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Günyüzü Şehit Melih Özcan İlçe Devlet Hastanesi",
+    "city": "Eskişehir",
+    "kont": "2",
+    "min": 71.62955,
+    "max": 77.23878
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sivrihisar Devlet Hastanesi",
+    "city": "Eskişehir",
+    "kont": "5",
+    "min": 71.2682,
+    "max": 76.92573
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Beylikova İlçe Hastanesi",
+    "city": "Eskişehir",
+    "kont": "1",
+    "min": 71.04449,
+    "max": 71.04449
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mihalıççık Gün Sazak İlçe Devlet Hastanesi",
+    "city": "Eskişehir",
+    "kont": "1",
+    "min": 70.98895,
+    "max": 70.98895
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Nizip Devlet Hastanesi",
+    "city": "Gaziantep",
+    "kont": "21",
+    "min": 77.96775,
+    "max": 83.31681
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gaziantep Cengiz Gökçek Kadın Doğum Ve Çocuk Hastalıkları Hastanesi",
+    "city": "Gaziantep",
+    "kont": "17",
+    "min": 76.19579,
+    "max": 84.07632
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gaziantep Şehir Hastanesi",
+    "city": "Gaziantep",
+    "kont": "642",
+    "min": 73.85617,
+    "max": 90.7417
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Giresun Prof. Dr. A. İlhan Özdemir Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "4",
+    "min": 77.96642,
+    "max": 79.37836
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Giresun Kadın Doğum Ve Çocuk Hastalıkları Eğitim Ve Araştırma Hastanesi",
+    "city": "Giresun",
+    "kont": "4",
+    "min": 73.07794,
+    "max": 79.73741
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Giresun Eğitim Ve Araştırma Hastanesi",
+    "city": "Giresun",
+    "kont": "24",
+    "min": 72.9449,
+    "max": 84.32599
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çamoluk İlçe Devlet Hastanesi",
+    "city": "Giresun",
+    "kont": "1",
+    "min": 72.23138,
+    "max": 72.23138
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şiran Devlet Hastanesi",
+    "city": "Gümüşhane",
+    "kont": "1",
+    "min": 77.44378,
+    "max": 77.44378
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kelkit Devlet Hastanesi",
+    "city": "Gümüşhane",
+    "kont": "3",
+    "min": 74.66856,
+    "max": 79.02981
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gümüşhane Devlet Hastanesi",
+    "city": "Gümüşhane",
+    "kont": "5",
+    "min": 71.23633,
+    "max": 75.25265
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şemdinli Devlet Hastanesi",
+    "city": "Hakkari",
+    "kont": "2",
+    "min": 80.73838,
+    "max": 81.11977
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Derecik Devlet Hastanesi",
+    "city": "Hakkari",
+    "kont": "1",
+    "min": 79.82349,
+    "max": 79.82349
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hakkari Devlet Hastanesi",
+    "city": "Hakkari",
+    "kont": "8",
+    "min": 78.84026,
+    "max": 81.38356
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çukurca Devlet Hastanesi",
+    "city": "Hakkari",
+    "kont": "1",
+    "min": 77.98187,
+    "max": 77.98187
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Samandağ Devlet Hastanesi",
+    "city": "Hatay",
+    "kont": "1",
+    "min": 84.97347,
+    "max": 84.97347
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Dörtyol Devlet Hastanesi",
+    "city": "Hatay",
+    "kont": "9",
+    "min": 78.4858,
+    "max": 84.45903
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Defne Devlet Hastanesi",
+    "city": "Hatay",
+    "kont": "21",
+    "min": 74.54372,
+    "max": 84.55659
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kırıkhan Devlet Hastanesi",
+    "city": "Hatay",
+    "kont": "20",
+    "min": 73.72312,
+    "max": 81.04093
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Altınözü Devlet Hastanesi",
+    "city": "Hatay",
+    "kont": "9",
+    "min": 72.41634,
+    "max": 78.13858
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yayladağı Devlet Hastanesi",
+    "city": "Hatay",
+    "kont": "7",
+    "min": 72.30793,
+    "max": 79.05347
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Reyhanlı Devlet Hastanesi",
+    "city": "Hatay",
+    "kont": "20",
+    "min": 72.17488,
+    "max": 80.74067
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Iğdır Dr. Nevruz Erez Devlet Hastanesi",
+    "city": "Iğdır",
+    "kont": "1",
+    "min": 83.8421,
+    "max": 83.8421
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tuzluca İlçe Devlet Hastanesi",
+    "city": "Iğdır",
+    "kont": "1",
+    "min": 82.55041,
+    "max": 82.55041
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aralık İlçe Devlet Hastanesi",
+    "city": "Iğdır",
+    "kont": "1",
+    "min": 76.5138,
+    "max": 76.5138
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Keçiborlu İlçe Devlet Hastanesi",
+    "city": "Isparta",
+    "kont": "1",
+    "min": 90.63099,
+    "max": 90.63099
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Uluborlu İlçe Devlet Hastanesi",
+    "city": "Isparta",
+    "kont": "1",
+    "min": 85.78719,
+    "max": 85.78719
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Senirkent İlçe Devlet Hastanesi",
+    "city": "Isparta",
+    "kont": "2",
+    "min": 80.85138,
+    "max": 80.99952
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yalvaç Devlet Hastanesi",
+    "city": "Isparta",
+    "kont": "3",
+    "min": 75.90242,
+    "max": 80.34154
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sütçüler İlçe Devlet Hastanesi",
+    "city": "Isparta",
+    "kont": "2",
+    "min": 75.33149,
+    "max": 76.79498
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Beyoğlu Göz Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "15",
+    "min": 74.82297,
+    "max": 82.37499
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bayrampaşa Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "18",
+    "min": 74.07529,
+    "max": 81.30798
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tuzla Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "20",
+    "min": 73.56871,
+    "max": 83.54644
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Avcılar Murat Kölük Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "19",
+    "min": 72.65647,
+    "max": 77.97366
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Üsküdar Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "25",
+    "min": 72.39497,
+    "max": 84.69784
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Başakşehir Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "9",
+    "min": 72.10981,
+    "max": 86.74445
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Baltalimanı Metin Sabancı Kemik Hastalıkları Eah",
+    "city": "İstanbul",
+    "kont": "9",
+    "min": 71.67916,
+    "max": 82.30075
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Beylikdüzü Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "33",
+    "min": 71.01032,
+    "max": 84.50733
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Erenköy Ruh Ve Sinir Hastalıkları Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "15",
+    "min": 70.93969,
+    "max": 78.70492
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Fatih Sultan Mehmet Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "15",
+    "min": 70.42888,
+    "max": 85.07597
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Esenler Kadın Doğum Ve Çocuk Hastalıkları Hastanesi",
+    "city": "İstanbul",
+    "kont": "17",
+    "min": 70.09084,
+    "max": 80.74429
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Beykoz Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "33",
+    "min": 69.84214,
+    "max": 85.94619
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sultanbeyli Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "40",
+    "min": 69.68676,
+    "max": 84.13512
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Prof. Dr. Mazhar Osman Ruh Sağlığı Ve Sinir Hastalıkları Eah",
+    "city": "İstanbul",
+    "kont": "48",
+    "min": 69.67396,
+    "max": 76.42772
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Silivri Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "13",
+    "min": 69.61022,
+    "max": 74.70043
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Arnavutköy Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "31",
+    "min": 69.59971,
+    "max": 82.79417
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kartal Dr. Lütfi Kırdar Şehir Hastanesi",
+    "city": "İstanbul",
+    "kont": "148",
+    "min": 69.27483,
+    "max": 86.69846
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Marmara Ceza İnfaz Kurumu Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "1",
+    "min": 69.25116,
+    "max": 69.25116
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Sultan 2. Abdülhamid Han Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "28",
+    "min": 69.23245,
+    "max": 72.16305
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Büyükçekmece Mimar Sinan Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "58",
+    "min": 69.21833,
+    "max": 79.03935
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çatalca İlyas Çokay Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "11",
+    "min": 69.18778,
+    "max": 74.25892
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sancaktepe Şehit Prof. Dr. İlhan Varank Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "53",
+    "min": 69.10303,
+    "max": 80.19666
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Zeynep Kamil Kadın Ve Çocuk Hastalıkları Eah",
+    "city": "İstanbul",
+    "kont": "16",
+    "min": 68.89441,
+    "max": 73.57595
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Dr. Siyami Ersek Göğüs Kalp Ve Damar Cerrahisi Eah",
+    "city": "İstanbul",
+    "kont": "37",
+    "min": 68.87437,
+    "max": 79.15102
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şile Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "10",
+    "min": 68.82378,
+    "max": 79.33731
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Göztepe Prof. Dr. Süleyman Yalçın Şehir Hastanesi",
+    "city": "İstanbul",
+    "kont": "100",
+    "min": 68.62832,
+    "max": 80.66051
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kartal Koşuyolu Yüksek İhtisas Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "82",
+    "min": 68.51664,
+    "max": 77.84653
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Yedikule Göğüs Hastalıkları Ve Göğüs Cerrahisi Eah",
+    "city": "İstanbul",
+    "kont": "52",
+    "min": 68.51169,
+    "max": 80.3215
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Esenyurt Necmi Kadıoğlu Devlet Hastanesi",
+    "city": "İstanbul",
+    "kont": "48",
+    "min": 68.43648,
+    "max": 83.22385
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Haydarpaşa Numune Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "41",
+    "min": 68.43056,
+    "max": 72.89069
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Prof. Dr. Cemil Taşcıoğlu Şehir Hastanesi",
+    "city": "İstanbul",
+    "kont": "178",
+    "min": 68.41282,
+    "max": 84.46724
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Marmara Üniversitesi Pendik Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "202",
+    "min": 68.30935,
+    "max": 73.24745
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "33",
+    "min": 68.25381,
+    "max": 72.9426
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ümraniye Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "249",
+    "min": 68.17172,
+    "max": 79.00385
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Süreyyapaşa Göğüs Hastalıkları Ve Göğüs Cerrahisi Eah",
+    "city": "İstanbul",
+    "kont": "56",
+    "min": 68.13852,
+    "max": 73.97376
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Mehmet Akif Ersoy Göğüs Kalp Ve Damar Cerrahisi Eah",
+    "city": "İstanbul",
+    "kont": "143",
+    "min": 68.04555,
+    "max": 85.83777
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Başakşehir Çam Ve Sakura Şehir Hastanesi",
+    "city": "İstanbul",
+    "kont": "595",
+    "min": 67.89609,
+    "max": 83.88678
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şişli Hamidiye Etfal Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "141",
+    "min": 67.86555,
+    "max": 76.85051
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Haseki Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "158",
+    "min": 67.79818,
+    "max": 87.7569
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gaziosmanpaşa Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "102",
+    "min": 67.78997,
+    "max": 80.64771
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İstanbul Kanuni Sultan Süleyman Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "148",
+    "min": 67.67697,
+    "max": 81.8474
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bağcılar Eğitim Ve Araştırma Hastanesi",
+    "city": "İstanbul",
+    "kont": "381",
+    "min": 67.51797,
+    "max": 81.36714
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Menemen Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "4",
+    "min": 82.85659,
+    "max": 87.01054
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İzmir Dr.Suat Seren Göğüs Hastalıkları Ve Cerrahisi Eah",
+    "city": "İzmir",
+    "kont": "4",
+    "min": 81.26464,
+    "max": 84.36378
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İzmir Atatürk Eğitim Ve Araştırma Hastanesi",
+    "city": "İzmir",
+    "kont": "4",
+    "min": 80.7653,
+    "max": 86.1262
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İzmir Dr. Behçet Uz Çocuk Hastalıkları Ve Cerrahisi Eah",
+    "city": "İzmir",
+    "kont": "4",
+    "min": 77.55811,
+    "max": 84.03624
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Urla Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "9",
+    "min": 76.61135,
+    "max": 89.36888
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Torbalı Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "4",
+    "min": 76.59493,
+    "max": 83.45577
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Buca Seyfi Demirsoy Eğitim Ve Araştırma Hastanesi",
+    "city": "İzmir",
+    "kont": "35",
+    "min": 76.20859,
+    "max": 86.81508
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Menderes Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "9",
+    "min": 76.1015,
+    "max": 85.19259
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çiğli Eğitim Ve Araştırma Hastanesi",
+    "city": "İzmir",
+    "kont": "51",
+    "min": 74.60976,
+    "max": 85.21951
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bayındır Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "2",
+    "min": 73.663,
+    "max": 79.37836
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çeşme Alper Çizgenakat Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "6",
+    "min": 72.3631,
+    "max": 81.76724
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tire Devlet Hastanesi",
+    "city": "İzmir",
+    "kont": "4",
+    "min": 72.01226,
+    "max": 74.53781
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İzmir Şehir Hastanesi",
+    "city": "İzmir",
+    "kont": "904",
+    "min": 69.71634,
+    "max": 85.12885
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Türkoğlu Dr. Kemal Beyazıt Devlet Hastanesi",
+    "city": "Kahramanmaraş",
+    "kont": "10",
+    "min": 79.7269,
+    "max": 86.60779
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Göksun Devlet Hastanesi",
+    "city": "Kahramanmaraş",
+    "kont": "4",
+    "min": 78.13725,
+    "max": 79.69503
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Afşin Devlet Hastanesi",
+    "city": "Kahramanmaraş",
+    "kont": "5",
+    "min": 77.77591,
+    "max": 84.4495
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Elbistan Devlet Hastanesi",
+    "city": "Kahramanmaraş",
+    "kont": "12",
+    "min": 76.13205,
+    "max": 82.59871
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Nurhak İlçe Devlet Hastanesi",
+    "city": "Kahramanmaraş",
+    "kont": "1",
+    "min": 75.3857,
+    "max": 75.3857
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Safranbolu Devlet Hastanesi",
+    "city": "Karabük",
+    "kont": "2",
+    "min": 76.49834,
+    "max": 76.81502
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karabük Eğitim Ve Araştırma Hastanesi",
+    "city": "Karabük",
+    "kont": "67",
+    "min": 69.89176,
+    "max": 83.30039
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karaman Eğitim Ve Araştırma Hastanesi",
+    "city": "Karaman",
+    "kont": "15",
+    "min": 75.86137,
+    "max": 83.95149
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ermenek Devlet Hastanesi",
+    "city": "Karaman",
+    "kont": "4",
+    "min": 74.27305,
+    "max": 75.05816
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sarıveliler İlçe Devlet Hastanesi",
+    "city": "Karaman",
+    "kont": "7",
+    "min": 70.23668,
+    "max": 71.50966
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Harakani Devlet Hastanesi",
+    "city": "Kars",
+    "kont": "4",
+    "min": 78.63297,
+    "max": 85.2573
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sarıkamış Devlet Hastanesi",
+    "city": "Kars",
+    "kont": "4",
+    "min": 74.76647,
+    "max": 78.21512
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akyaka İlçe Devlet Hastanesi",
+    "city": "Kars",
+    "kont": "2",
+    "min": 74.04342,
+    "max": 75.55061
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kağızman Devlet Hastanesi",
+    "city": "Kars",
+    "kont": "6",
+    "min": 73.85617,
+    "max": 74.60747
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Araç İlçe Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "1",
+    "min": 72.55494,
+    "max": 72.55494
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Cide Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "6",
+    "min": 70.59344,
+    "max": 78.22104
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kastamonu Pınarbaşı İlçe Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "1",
+    "min": 70.56881,
+    "max": 70.56881
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kastamonu Eğitim Ve Araştırma Hastanesi",
+    "city": "Kastamonu",
+    "kont": "63",
+    "min": 70.13189,
+    "max": 86.88341
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Abana İlçe Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "1",
+    "min": 70.02842,
+    "max": 70.02842
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Taşköprü Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "5",
+    "min": 69.98472,
+    "max": 77.13169
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tosya Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "12",
+    "min": 69.83393,
+    "max": 72.10293
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İnebolu Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "3",
+    "min": 69.62929,
+    "max": 70.17789
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bozkurt İlçe Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "2",
+    "min": 69.24887,
+    "max": 69.61022
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Doğanyurt İlçe Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "1",
+    "min": 68.54586,
+    "max": 68.54586
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şenpazar İlçe Devlet Hastanesi",
+    "city": "Kastamonu",
+    "kont": "2",
+    "min": 68.27156,
+    "max": 68.89441
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kayseri Devlet Hastanesi",
+    "city": "Kayseri",
+    "kont": "5",
+    "min": 84.62033,
+    "max": 88.81437
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Develi Dr. Ekrem Karakaya Devlet Hastanesi",
+    "city": "Kayseri",
+    "kont": "8",
+    "min": 80.10141,
+    "max": 84.10457
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kayseri Pınarbaşı Devlet Hastanesi",
+    "city": "Kayseri",
+    "kont": "8",
+    "min": 76.54301,
+    "max": 79.08764
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yahyalı Devlet Hastanesi",
+    "city": "Kayseri",
+    "kont": "10",
+    "min": 76.39946,
+    "max": 79.84812
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karakeçili İlçe Devlet Hastanesi",
+    "city": "Kırıkkale",
+    "kont": "2",
+    "min": 81.42956,
+    "max": 83.72548
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Delice İlçe Devlet Hastanesi",
+    "city": "Kırıkkale",
+    "kont": "2",
+    "min": 80.80768,
+    "max": 83.08259
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sulakyurt İlçe Devlet Hastanesi",
+    "city": "Kırıkkale",
+    "kont": "2",
+    "min": 78.79197,
+    "max": 80.75021
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Lüleburgaz Devlet Hastanesi",
+    "city": "Kırklareli",
+    "kont": "8",
+    "min": 71.78263,
+    "max": 76.30288
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kırklareli Eğitim Ve Araştırma Hastanesi",
+    "city": "Kırklareli",
+    "kont": "18",
+    "min": 70.32638,
+    "max": 84.21758
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Babaeski Devlet Hastanesi",
+    "city": "Kırklareli",
+    "kont": "13",
+    "min": 68.70716,
+    "max": 81.07377
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Demirköy İlçe Devlet Hastanesi",
+    "city": "Kırklareli",
+    "kont": "2",
+    "min": 68.45881,
+    "max": 68.46111
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akpınar İlçe Devlet Hastanesi",
+    "city": "Kırşehir",
+    "kont": "2",
+    "min": 76.70793,
+    "max": 82.14307
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çiçekdağı İlçe Devlet Hastanesi",
+    "city": "Kırşehir",
+    "kont": "2",
+    "min": 74.55918,
+    "max": 75.8755
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Musabeyli İlçe Devlet Hastanesi",
+    "city": "Kilis",
+    "kont": "7",
+    "min": 74.2448,
+    "max": 78.82843
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karamürsel Devlet Hastanesi",
+    "city": "Kocaeli",
+    "kont": "2",
+    "min": 79.28539,
+    "max": 83.20018
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kocaeli Devlet Hastanesi",
+    "city": "Kocaeli",
+    "kont": "13",
+    "min": 77.6652,
+    "max": 82.32079
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Derince Eğitim Ve Araştırma Hastanesi",
+    "city": "Kocaeli",
+    "kont": "4",
+    "min": 75.77432,
+    "max": 77.42507
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gebze Fatih Devlet Hastanesi",
+    "city": "Kocaeli",
+    "kont": "11",
+    "min": 74.16596,
+    "max": 80.37571
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Darıca Farabi Eğitim Ve Araştırma Hastanesi",
+    "city": "Kocaeli",
+    "kont": "7",
+    "min": 73.54541,
+    "max": 80.31558
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Dilovası Devlet Hastanesi",
+    "city": "Kocaeli",
+    "kont": "3",
+    "min": 73.53684,
+    "max": 80.72884
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kandıra Ecz. Kazım Dinç Devlet Hastanesi",
+    "city": "Kocaeli",
+    "kont": "4",
+    "min": 72.10293,
+    "max": 76.42542
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kocaeli Şehir Hastanesi",
+    "city": "Kocaeli",
+    "kont": "230",
+    "min": 69.93776,
+    "max": 82.2702
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ereğli Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "13",
+    "min": 74.59793,
+    "max": 86.29932
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Konya Numune Hastanesi",
+    "city": "Konya",
+    "kont": "36",
+    "min": 73.8657,
+    "max": 89.73976
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karapınar Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "3",
+    "min": 73.63608,
+    "max": 77.86066
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bozkır Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "2",
+    "min": 73.03786,
+    "max": 73.06249
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Konya Meram Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "36",
+    "min": 72.96132,
+    "max": 80.73705
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Beyşehir Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "9",
+    "min": 72.70706,
+    "max": 82.78004
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Emirgazi İlçe Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "2",
+    "min": 72.61869,
+    "max": 73.44291
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çumra Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "4",
+    "min": 72.37264,
+    "max": 75.99212
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Güneysınır Vali İhsan Dede İlçe Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "2",
+    "min": 72.15484,
+    "max": 79.80115
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Konya Beyhekim Eğitim Ve Araştırma Hastanesi",
+    "city": "Konya",
+    "kont": "97",
+    "min": 71.6578,
+    "max": 82.29254
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kadınhanı Refik Saime Koyuncu Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "3",
+    "min": 71.31058,
+    "max": 73.96229
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Konya Şehir Hastanesi",
+    "city": "Konya",
+    "kont": "180",
+    "min": 71.11511,
+    "max": 81.17397
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akören İlçe Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "2",
+    "min": 71.05861,
+    "max": 82.09707
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Seydişehir Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "21",
+    "min": 70.90191,
+    "max": 80.76071
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akşehir Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "56",
+    "min": 70.75244,
+    "max": 83.60065
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Konya Dr. Ali Kemal Belviranlı Kadın Doğum Ve Çocuk Hastalıkları Hastanesi",
+    "city": "Konya",
+    "kont": "36",
+    "min": 70.38977,
+    "max": 78.19967
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ilgın Dr.Vefa Tanır Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "12",
+    "min": 69.93872,
+    "max": 75.44582
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Altınekin İlçe Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "2",
+    "min": 69.93739,
+    "max": 70.60757
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Taşkent İlçe Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "2",
+    "min": 69.86942,
+    "max": 70.05535
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kulu Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "36",
+    "min": 69.8658,
+    "max": 76.67606
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Cihanbeyli Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "37",
+    "min": 69.8553,
+    "max": 74.69814
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çeltik Şehit Jandarma Uzman Çavuş Ramazan Gülle İlçe Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "6",
+    "min": 69.39012,
+    "max": 72.6834
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Derebucak İlçe Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "6",
+    "min": 69.32312,
+    "max": 70.52052
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yunak Hacı İzzet Baysal Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "13",
+    "min": 69.0452,
+    "max": 71.0172
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kulu Ömeranlı İlçe Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "5",
+    "min": 69.00282,
+    "max": 72.52934
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Cihanbeyli Yeniceoba İlçe Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "4",
+    "min": 68.98049,
+    "max": 76.82226
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tuzlukçu Şehit Halim Ünal İlçe Devlet Hastanesi",
+    "city": "Konya",
+    "kont": "3",
+    "min": 68.73903,
+    "max": 69.44433
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kütahya Yoncalı Fizik Tedavi Ve Rehabilitasyon Hastanesi",
+    "city": "Kütahya",
+    "kont": "6",
+    "min": 71.6555,
+    "max": 80.62767
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Simav Doç. Dr.İsmail Karakuyu Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "9",
+    "min": 69.87172,
+    "max": 76.1038
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kütahya Evliya Çelebi Eğitim Ve Araştırma Hastanesi",
+    "city": "Kütahya",
+    "kont": "285",
+    "min": 69.79747,
+    "max": 85.37622
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şaphane İlçe Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "2",
+    "min": 69.72913,
+    "max": 69.77875
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tavşanlı Doç. Dr.Mustafa Kalemli Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "20",
+    "min": 69.65163,
+    "max": 79.3419
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Emet Dr.Fazıl Doğan Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "26",
+    "min": 69.42924,
+    "max": 73.26616
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gediz Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "13",
+    "min": 69.06524,
+    "max": 70.57473
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aslanapa İlçe Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "4",
+    "min": 69.02745,
+    "max": 74.74872
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Altıntaş İlçe Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "4",
+    "min": 68.84382,
+    "max": 69.67263
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çavdarhisar İlçe Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "4",
+    "min": 68.73999,
+    "max": 69.44663
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hisarcık İlçe Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "4",
+    "min": 68.39277,
+    "max": 69.65295
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Domaniç İlçe Devlet Hastanesi",
+    "city": "Kütahya",
+    "kont": "4",
+    "min": 68.29619,
+    "max": 69.3865
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Darende Hulusi Efendi Devlet Hastanesi",
+    "city": "Malatya",
+    "kont": "5",
+    "min": 80.76892,
+    "max": 84.08815
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Arapgir Ali Özge Devlet Hastanesi",
+    "city": "Malatya",
+    "kont": "2",
+    "min": 80.22033,
+    "max": 80.51925
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Pütürge Devlet Hastanesi",
+    "city": "Malatya",
+    "kont": "3",
+    "min": 79.09585,
+    "max": 80.02583
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Doğanyol İlçe Devlet Hastanesi",
+    "city": "Malatya",
+    "kont": "4",
+    "min": 77.79365,
+    "max": 79.40202
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kuluncak Şehit Mehmet Ali Şekerci İlçe Devlet Hastanesi",
+    "city": "Malatya",
+    "kont": "4",
+    "min": 77.72532,
+    "max": 82.30437
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Salihli Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "4",
+    "min": 76.72206,
+    "max": 79.59156
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Manisa Merkezefendi Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "14",
+    "min": 76.46055,
+    "max": 84.60029
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Manisa Şehir Hastanesi",
+    "city": "Manisa",
+    "kont": "36",
+    "min": 73.20507,
+    "max": 83.04251
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Turgutlu Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "16",
+    "min": 72.86014,
+    "max": 79.80345
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Soma Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "9",
+    "min": 72.67615,
+    "max": 80.25317
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Saruhanlı Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "4",
+    "min": 72.61869,
+    "max": 72.85652
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akhisar Mustafa Kirazoğlu Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "12",
+    "min": 72.22317,
+    "max": 84.0599
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Demirci Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "4",
+    "min": 71.76851,
+    "max": 74.98886
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Alaşehir Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "15",
+    "min": 71.70379,
+    "max": 74.86764
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sarıgöl Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "4",
+    "min": 71.51884,
+    "max": 73.40053
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gördes Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "1",
+    "min": 71.09737,
+    "max": 71.09737
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kula Devlet Hastanesi",
+    "city": "Manisa",
+    "kont": "11",
+    "min": 70.81945,
+    "max": 78.95689
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mardin Eğitim Ve Araştırma Hastanesi",
+    "city": "Mardin",
+    "kont": "3",
+    "min": 87.29667,
+    "max": 88.14915
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Midyat Devlet Hastanesi",
+    "city": "Mardin",
+    "kont": "1",
+    "min": 86.53124,
+    "max": 86.53124
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kızıltepe Devlet Hastanesi",
+    "city": "Mardin",
+    "kont": "2",
+    "min": 85.17846,
+    "max": 90.59224
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Savur Prof.Dr.Aziz Sancar İlçe Devlet Hastanesi",
+    "city": "Mardin",
+    "kont": "3",
+    "min": 83.31222,
+    "max": 84.74516
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gülnar Devlet Hastanesi",
+    "city": "Mersin",
+    "kont": "1",
+    "min": 82.7728,
+    "max": 82.7728
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mersin Şehir Hastanesi",
+    "city": "Mersin",
+    "kont": "14",
+    "min": 81.59315,
+    "max": 87.64522
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tarsus Devlet Hastanesi",
+    "city": "Mersin",
+    "kont": "4",
+    "min": 81.33527,
+    "max": 83.97612
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Muğla Eğitim Ve Araştırma Hastanesi",
+    "city": "Muğla",
+    "kont": "22",
+    "min": 74.72639,
+    "max": 83.88086
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bodrum Devlet Hastanesi",
+    "city": "Muğla",
+    "kont": "9",
+    "min": 72.75994,
+    "max": 78.17142
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Muş Devlet Hastanesi",
+    "city": "Muş",
+    "kont": "2",
+    "min": 84.824,
+    "max": 86.12982
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bulanık Devlet Hastanesi",
+    "city": "Muş",
+    "kont": "1",
+    "min": 79.52915,
+    "max": 79.52915
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Malazgirt Devlet Hastanesi",
+    "city": "Muş",
+    "kont": "5",
+    "min": 78.56826,
+    "max": 79.20294
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Nevşehir Devlet Hastanesi",
+    "city": "Nevşehir",
+    "kont": "6",
+    "min": 79.05939,
+    "max": 84.61671
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ürgüp Devlet Hastanesi",
+    "city": "Nevşehir",
+    "kont": "1",
+    "min": 78.94735,
+    "max": 78.94735
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hacıbektaş İlçe Devlet Hastanesi",
+    "city": "Nevşehir",
+    "kont": "1",
+    "min": 78.43063,
+    "max": 78.43063
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kozaklı Fizik Tedavi Ve Rehabilitasyon Hastanesi",
+    "city": "Nevşehir",
+    "kont": "2",
+    "min": 78.36096,
+    "max": 79.50778
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bor Devlet Hastanesi",
+    "city": "Niğde",
+    "kont": "9",
+    "min": 73.97738,
+    "max": 79.02981
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çamardı İlçe Devlet Hastanesi",
+    "city": "Niğde",
+    "kont": "7",
+    "min": 72.85882,
+    "max": 75.47636
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ulukışla İlçe Devlet Hastanesi",
+    "city": "Niğde",
+    "kont": "4",
+    "min": 72.34306,
+    "max": 74.55459
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Niğde Eğitim Ve Araştırma Hastanesi",
+    "city": "Niğde",
+    "kont": "227",
+    "min": 71.98401,
+    "max": 83.78198
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Altunhisar İlçe Devlet Hastanesi",
+    "city": "Niğde",
+    "kont": "4",
+    "min": 71.9735,
+    "max": 73.04969
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çiftlik İlçe Devlet Hastanesi",
+    "city": "Niğde",
+    "kont": "9",
+    "min": 71.57304,
+    "max": 72.78686
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ünye Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "4",
+    "min": 81.22456,
+    "max": 83.00605
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ordu Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "4",
+    "min": 79.5679,
+    "max": 81.91344
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Fatsa Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "4",
+    "min": 78.97693,
+    "max": 80.72293
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ordu Eğitim Ve Araştırma Hastanesi",
+    "city": "Ordu",
+    "kont": "4",
+    "min": 77.8912,
+    "max": 79.99891
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gürgentepe Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "7",
+    "min": 72.35718,
+    "max": 77.36035
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kumru Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "15",
+    "min": 71.45545,
+    "max": 77.99962
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gölköy Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "21",
+    "min": 70.91012,
+    "max": 73.36769
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Korgan Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "5",
+    "min": 70.45448,
+    "max": 72.21726
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Aybastı Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "25",
+    "min": 70.21338,
+    "max": 76.25229
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akkuş Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "7",
+    "min": 69.71272,
+    "max": 70.50772
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Mesudiye İlçe Devlet Hastanesi",
+    "city": "Ordu",
+    "kont": "7",
+    "min": 69.18645,
+    "max": 69.97518
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Osmaniye Devlet Hastanesi",
+    "city": "Osmaniye",
+    "kont": "37",
+    "min": 75.999,
+    "max": 86.75266
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Rize Devlet Hastanesi",
+    "city": "Rize",
+    "kont": "16",
+    "min": 70.26626,
+    "max": 75.43495
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Rize Eğitim Ve Araştırma Hastanesi",
+    "city": "Rize",
+    "kont": "78",
+    "min": 69.88946,
+    "max": 78.51634
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kaçkar Devlet Hastanesi",
+    "city": "Rize",
+    "kont": "9",
+    "min": 69.57967,
+    "max": 81.11023
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kocaali İlçe Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "1",
+    "min": 79.39381,
+    "max": 79.39381
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yenikent Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "6",
+    "min": 74.59431,
+    "max": 84.64267
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Geyve Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "2",
+    "min": 73.9245,
+    "max": 79.7857
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akyazı Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "7",
+    "min": 72.94949,
+    "max": 79.67861
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karasu Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "7",
+    "min": 72.83286,
+    "max": 75.64587
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hendek Devlet Hastanesi",
+    "city": "Sakarya",
+    "kont": "7",
+    "min": 71.57075,
+    "max": 73.62787
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sakarya Eğitim Ve Araştırma Hastanesi",
+    "city": "Sakarya",
+    "kont": "56",
+    "min": 71.13974,
+    "max": 80.73246
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Samsun Gazi Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "4",
+    "min": 81.21043,
+    "max": 85.88606
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Terme Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "2",
+    "min": 78.5318,
+    "max": 80.9266
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bafra Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "8",
+    "min": 77.5167,
+    "max": 84.83583
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kavak Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "1",
+    "min": 74.82165,
+    "max": 74.82165
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Alaçam Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "2",
+    "min": 74.75923,
+    "max": 83.64302
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Samsun Eğitim Ve Araştırma Hastanesi",
+    "city": "Samsun",
+    "kont": "222",
+    "min": 72.48793,
+    "max": 84.74746
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Salıpazarı İlçe Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "6",
+    "min": 72.37264,
+    "max": 79.06168
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çarşamba Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "45",
+    "min": 72.28426,
+    "max": 86.23099
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Havza Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "18",
+    "min": 71.15387,
+    "max": 78.35867
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Asarcık İlçe Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "2",
+    "min": 71.15025,
+    "max": 72.33944
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Vezirköprü Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "35",
+    "min": 71.00899,
+    "max": 79.54786
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Samsun Ayvacık Devlet Hastanesi",
+    "city": "Samsun",
+    "kont": "2",
+    "min": 70.54285,
+    "max": 71.8733
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Siirt Eğitim Ve Araştırma Hastanesi",
+    "city": "Siirt",
+    "kont": "3",
+    "min": 85.71064,
+    "max": 87.8676
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şirvan İlçe Devlet Hastanesi",
+    "city": "Siirt",
+    "kont": "4",
+    "min": 83.51819,
+    "max": 85.3138
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Eruh Devlet Hastanesi",
+    "city": "Siirt",
+    "kont": "2",
+    "min": 83.04384,
+    "max": 83.09672
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Pervari Devlet Hastanesi",
+    "city": "Siirt",
+    "kont": "1",
+    "min": 82.07112,
+    "max": 82.07112
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sinop Atatürk Devlet Hastanesi",
+    "city": "Sinop",
+    "kont": "30",
+    "min": 72.08747,
+    "max": 77.80645
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Ayancık Devlet Hastanesi",
+    "city": "Sinop",
+    "kont": "9",
+    "min": 71.1657,
+    "max": 73.2192
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Boyabat 75.Yıl Devlet Hastanesi",
+    "city": "Sinop",
+    "kont": "14",
+    "min": 70.75244,
+    "max": 79.96474
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Durağan Şehit Hakan Tanrıkulu Devlet Hastanesi",
+    "city": "Sinop",
+    "kont": "4",
+    "min": 70.28498,
+    "max": 71.72287
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Türkeli Devlet Hastanesi",
+    "city": "Sinop",
+    "kont": "7",
+    "min": 69.44566,
+    "max": 71.66963
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şarkışla Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "4",
+    "min": 78.1987,
+    "max": 84.4472
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Zara Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "10",
+    "min": 74.37555,
+    "max": 85.13017
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gürün Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "10",
+    "min": 73.63245,
+    "max": 77.63562
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kangal Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "10",
+    "min": 72.99186,
+    "max": 83.39697
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Altınyayla İlçe Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "4",
+    "min": 72.72118,
+    "max": 74.99248
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Suşehri Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "20",
+    "min": 71.13286,
+    "max": 76.21946
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Divriği Sadık Özgür Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "10",
+    "min": 70.98074,
+    "max": 74.50268
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı İmranlı İlçe Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "6",
+    "min": 69.89538,
+    "max": 72.42322
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Koyulhisar İlçe Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "3",
+    "min": 69.66213,
+    "max": 71.9065
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akıncılar İlçe Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "4",
+    "min": 69.47947,
+    "max": 70.9962
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Doğanşar İlçe Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "8",
+    "min": 69.30537,
+    "max": 72.36539
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gölova İlçe Devlet Hastanesi",
+    "city": "Sivas",
+    "kont": "4",
+    "min": 69.13454,
+    "max": 69.97651
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şanlıurfa Mehmet Akif İnan Eğitim Ve Araştırma Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "18",
+    "min": 82.35495,
+    "max": 86.94221
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Viranşehir Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "9",
+    "min": 81.28927,
+    "max": 84.18111
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şanlıurfa Balıklıgöl Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "9",
+    "min": 80.83822,
+    "max": 82.70121
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şanlıurfa Eğitim Ve Araştırma Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "14",
+    "min": 80.2167,
+    "max": 82.38912
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Birecik Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "14",
+    "min": 78.93685,
+    "max": 80.62767
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Suruç Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "14",
+    "min": 78.10212,
+    "max": 79.19702
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akçakale Devlet Hastanesi",
+    "city": "Şanlıurfa",
+    "kont": "8",
+    "min": 77.58865,
+    "max": 80.81722
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Cizre Dr. Selahattin Cizrelioğlu Devlet Hastanesi",
+    "city": "Şırnak",
+    "kont": "3",
+    "min": 84.11049,
+    "max": 88.19744
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şırnak Devlet Hastanesi",
+    "city": "Şırnak",
+    "kont": "5",
+    "min": 82.74358,
+    "max": 84.0139
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Muratlı Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "4",
+    "min": 72.82465,
+    "max": 73.52766
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Marmara Ereğlisi Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "3",
+    "min": 71.57075,
+    "max": 72.91761
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şarköy Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "5",
+    "min": 70.52281,
+    "max": 77.17177
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tekirdağ Dr. İsmail Fehmi Cumalıoğlu Şehir Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "72",
+    "min": 69.60792,
+    "max": 80.28963
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çorlu Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "91",
+    "min": 69.58691,
+    "max": 78.83073
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çerkezköy Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "69",
+    "min": 69.45713,
+    "max": 80.85005
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kapaklı Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "25",
+    "min": 68.99691,
+    "max": 75.11828
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tekirdağ Saray Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "19",
+    "min": 68.69665,
+    "max": 73.95046
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Malkara Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "16",
+    "min": 68.64112,
+    "max": 73.34403
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hayrabolu Devlet Hastanesi",
+    "city": "Tekirdağ",
+    "kont": "9",
+    "min": 68.36585,
+    "max": 70.62399
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tokat Dr. Cevdet Aykan Ruh Sağlığı Ve Hastalıkları Hastanesi",
+    "city": "Tokat",
+    "kont": "1",
+    "min": 75.26545,
+    "max": 75.26545
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Erbaa Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "5",
+    "min": 73.56774,
+    "max": 77.01277
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tokat Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "28",
+    "min": 73.01915,
+    "max": 80.47096
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Turhal Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "6",
+    "min": 72.41272,
+    "max": 77.36035
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Zile Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "4",
+    "min": 72.11838,
+    "max": 74.42613
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Artova İlçe Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "1",
+    "min": 71.85,
+    "max": 71.85
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Reşadiye Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "8",
+    "min": 70.70644,
+    "max": 77.38498
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yeşilyurt İlçe Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "2",
+    "min": 70.63123,
+    "max": 70.66407
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Başçiftlik İlçe Devlet Hastanesi",
+    "city": "Tokat",
+    "kont": "6",
+    "min": 70.05667,
+    "max": 70.66902
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akçaabat Haçkalı Baba Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "3",
+    "min": 77.24964,
+    "max": 78.6343
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tonya Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "1",
+    "min": 75.99442,
+    "max": 75.99442
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şalpazarı İlçe Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "1",
+    "min": 72.47381,
+    "max": 72.47381
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Trabzon Fatih Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "10",
+    "min": 72.30201,
+    "max": 76.70793
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Of Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "5",
+    "min": 71.7015,
+    "max": 78.18325
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Trabzon Kanuni Eğitim Ve Araştırma Hastanesi",
+    "city": "Trabzon",
+    "kont": "20",
+    "min": 71.64367,
+    "max": 81.30702
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Trabzon Ahi Evren Göğüs Kalp Ve Damar Cerrahisi Eğitim Ve Araştırma Hastanesi",
+    "city": "Trabzon",
+    "kont": "7",
+    "min": 71.51292,
+    "max": 77.97366
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çaykara Dr. M. İlhan Durgun İlçe Devlet Hastanesi",
+    "city": "Trabzon",
+    "kont": "1",
+    "min": 70.34148,
+    "max": 70.34148
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Trabzon Ataköy Ruh Ve Sinir Hastalıkları Hastanesi",
+    "city": "Trabzon",
+    "kont": "4",
+    "min": 70.1861,
+    "max": 71.84179
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Tunceli Devlet Hastanesi",
+    "city": "Tunceli",
+    "kont": "5",
+    "min": 80.48147,
+    "max": 81.48835
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Hozat İlçe Devlet Hastanesi",
+    "city": "Tunceli",
+    "kont": "1",
+    "min": 78.27851,
+    "max": 78.27851
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Uşak Eğitim Ve Araştırma Hastanesi",
+    "city": "Uşak",
+    "kont": "12",
+    "min": 77.5039,
+    "max": 84.05761
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Eşme Devlet Hastanesi",
+    "city": "Uşak",
+    "kont": "5",
+    "min": 72.98595,
+    "max": 78.17504
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Banaz Devlet Hastanesi",
+    "city": "Uşak",
+    "kont": "5",
+    "min": 72.96132,
+    "max": 79.66449
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sivaslı İlçe Devlet Hastanesi",
+    "city": "Uşak",
+    "kont": "4",
+    "min": 71.61542,
+    "max": 73.45571
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Uşak Ulubey İlçe Devlet Hastanesi",
+    "city": "Uşak",
+    "kont": "2",
+    "min": 70.91736,
+    "max": 71.30466
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karahallı İlçe Devlet Hastanesi",
+    "city": "Uşak",
+    "kont": "5",
+    "min": 70.59573,
+    "max": 74.75464
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gevaş Devlet Hastanesi",
+    "city": "Van",
+    "kont": "1",
+    "min": 87.66164,
+    "max": 87.66164
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Özalp Devlet Hastanesi",
+    "city": "Van",
+    "kont": "7",
+    "min": 81.03272,
+    "max": 87.70402
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Erciş Şehit Rıdvan Çevik Devlet Hastanesi",
+    "city": "Van",
+    "kont": "15",
+    "min": 80.85826,
+    "max": 83.9597
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çatak Devlet Hastanesi",
+    "city": "Van",
+    "kont": "4",
+    "min": 80.82543,
+    "max": 84.64858
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Muradiye Devlet Hastanesi",
+    "city": "Van",
+    "kont": "7",
+    "min": 79.79753,
+    "max": 84.65317
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Van Saray İlçe Devlet Hastanesi",
+    "city": "Van",
+    "kont": "1",
+    "min": 79.60207,
+    "max": 79.60207
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Başkale Devlet Hastanesi",
+    "city": "Van",
+    "kont": "7",
+    "min": 76.9011,
+    "max": 78.72726
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çaldıran Devlet Hastanesi",
+    "city": "Van",
+    "kont": "7",
+    "min": 76.11792,
+    "max": 80.08366
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Bahçesaray İlçe Devlet Hastanesi",
+    "city": "Van",
+    "kont": "6",
+    "min": 74.91231,
+    "max": 90.66878
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çınarcık Devlet Hastanesi",
+    "city": "Yalova",
+    "kont": "1",
+    "min": 80.23904,
+    "max": 80.23904
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yalova Devlet Hastanesi",
+    "city": "Yalova",
+    "kont": "28",
+    "min": 72.13842,
+    "max": 84.29182
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Boğazlıyan Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "8",
+    "min": 74.82756,
+    "max": 76.23358
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yozgat Şehir Hastanesi",
+    "city": "Yozgat",
+    "kont": "18",
+    "min": 73.19915,
+    "max": 88.63762
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çandır İlçe Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "7",
+    "min": 72.38773,
+    "max": 74.96652
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çayıralan İlçe Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "1",
+    "min": 72.20543,
+    "max": 72.20543
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sorgun Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "19",
+    "min": 71.8733,
+    "max": 81.26693
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yenifakılı İlçe Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "7",
+    "min": 71.36937,
+    "max": 73.95637
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yerköy Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "15",
+    "min": 71.17983,
+    "max": 82.68575
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Sarıkaya Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "14",
+    "min": 70.98207,
+    "max": 74.30818
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Akdağmadeni Şehit Sinan Babacan Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "10",
+    "min": 70.60757,
+    "max": 71.54612
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Şefaatli Şehit Osman Belkaya Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "7",
+    "min": 70.5169,
+    "max": 72.21629
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Saraykent Şehit Beytullah Yeşilay İlçe Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "3",
+    "min": 69.80833,
+    "max": 76.48651
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çekerek Şehit Harun Koçak Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "9",
+    "min": 69.55866,
+    "max": 70.31093
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Yozgat Aydıncık İlçe Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "7",
+    "min": 69.14311,
+    "max": 71.98763
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Kadışehri İlçe Devlet Hastanesi",
+    "city": "Yozgat",
+    "kont": "9",
+    "min": 69.12041,
+    "max": 73.44979
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Alaplı Devlet Hastanesi",
+    "city": "Zonguldak",
+    "kont": "2",
+    "min": 74.46259,
+    "max": 75.04536
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Zonguldak Atatürk Devlet Hastanesi",
+    "city": "Zonguldak",
+    "kont": "27",
+    "min": 71.76259,
+    "max": 82.67984
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Karadeniz Ereğli Devlet Hastanesi",
+    "city": "Zonguldak",
+    "kont": "18",
+    "min": 71.44591,
+    "max": 76.67738
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Gökçebey İlçe Devlet Hastanesi",
+    "city": "Zonguldak",
+    "kont": "2",
+    "min": 70.8809,
+    "max": 73.92088
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Zonguldak Kadın Doğum Ve Çocuk Hastalıkları Hastanesi",
+    "city": "Zonguldak",
+    "kont": "4",
+    "min": 70.86182,
+    "max": 71.85326
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Çaycuma Devlet Hastanesi",
+    "city": "Zonguldak",
+    "kont": "13",
+    "min": 70.65586,
+    "max": 85.07367
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Devrek Devlet Hastanesi",
+    "city": "Zonguldak",
+    "kont": "4",
+    "min": 70.38747,
+    "max": 75.23261
+  },
+  {
+    "location": "T.C. Sağlık Bakanlığı Zonguldak Uzun Mehmet Göğüs Ve Meslek Hastalıkları Hastanesi",
+    "city": "Zonguldak",
+    "kont": "9",
+    "min": 70.27677,
+    "max": 78.04658
+  }
+]
+   </script>
+   <style>
+    *{
+        border: none;
+        border-radius: 0px;
+        margin: 0;
+        padding: 0;
+    }
+   
+    /* Genel ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Başlık stili */
+h1 {
+    color: #00ffcc;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Tablo stili */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #333;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Başlık hücreleri stili */
+th {
+    background-color: #222;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+/* Veri hücreleri stili */
+td {
+    background-color: #1e1e1e;
+    color: #ccc;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover efekti */
+tr:hover td {
+    background-color: #333;
+    color: #fff;
+}
+#circ {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    border: 13px;
+    border-color: white;
+    bottom: 20px; /* Ekranın altından 20px yukarıda */
+    right: 20px;  /* Ekranın sağından 20px uzaklıkta */
+    background: radial-gradient(#155,transparent);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Diğer elemanların üstünde görünmesini sağlar */   
+    }
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+}
+.y2023{
+        background-color: rgb(1, 65, 65);
+    }
+    h2{
+        color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+    }
+    
+   </style>
+
+</head>
+<body>
+    <div id="container">
+        <h1 id="h">Hemşirelik Puanları</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Şehir</th>
+                    <th>Hastane</th>
+                    <th>Kontejyan</th>
+                    <th>Üst Puan</th>
+                    <th>Alt Puan</th>
+                </tr>
+            </thead>
+            <tbody id="by">
+               
+            </tbody>
+        </table>
+    </div>
+<div id="circ"></div>
+<h2><i><b>MÜFTÜ</b></i> tarfından yaratıldı</h2>
+    <script>
+        let voidPoint = 0;
+        const getPoint = () => {
+            let pp1 = prompt("Puanınızı giriniz");
+            pp1 = pp1.replace(",",".");
+            pp1 = Number(pp1);
+            if(isNaN(pp1)){
+                alert("Verdiğiniz değer NaN tipinde. Lütfen geçerli bir değer girin");
+                getPoint();
+            }else{
+        
+                document.getElementById("h").innerText = "Hemşirelik Puanları\n"+pp1 +" puanına göre";
+                voidPoint = pp1;
+                const pdata = [];
+                ta2.forEach((e) => {
+                    if(e.min <= voidPoint){
+                        pdata.push({
+                            location : e.location.replace("T.C. Sağlık Bakanlığı ",""),
+                            city: e.city,
+                            kont : e.kont,
+                            min:e.min,
+                            max:e.max,
+                            year: 2023
+                        })
+                    }
+                });
+                ta1.forEach((e,i) => {
+                    if(e.min <= voidPoint){
+                        pdata.push({
+                            location : e.location.replace("T.C. Sağlık Bakanlığı ",""),
+                            city: e.city,
+                            kont : e.kont,
+                            min:e.min,
+                            max:e.max,
+                            year: 2024
+                        })
+                    }  
+                })
+                pdata.sort((a,b) => a.min - b.min);
+                let res = "";
+                pdata.forEach((e) => {
+                    const htmss = ` <tr>
+                        <td  class="y${e.year}">${e.location}</td>
+                        <td  class="y${e.year}">${e.city}\n <p>${e.year === 2023 ? "<p>2023 yılına ait veri": ""}</p></td>
+                        <td  class="y${e.year}">${e.kont}</td>
+                        <td  class="y${e.year}">${e.max}</td>
+                        <td  class="y${e.year}">${e.min}</td>
+                    </tr>`
+                    res += htmss;
+                })
+                document.getElementById("by").innerHTML = res;
+            }
+        }
+        getPoint();
+        document.getElementById("circ").addEventListener("click",() =>{
+            const move = confirm("Yeni bir arama yapmak istediğinize emin misiniz?");
+            if(move){
+                window.location.reload();
+            }
+        })
+       </script>
+</body>
+</html>
